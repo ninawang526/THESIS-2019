@@ -27,7 +27,10 @@ with zipfile.ZipFile(data_path,"r") as f:
                 seen.append(filename)
             
             html = f.read(name)
-            article = NewsPlease.from_html(html, url=None)
+            try:
+                article = NewsPlease.from_html(html, url=None)
+            except e as ArticleException:
+
   
             if re.search("/opinion/",name):
                 opinion += 1

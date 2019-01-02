@@ -46,66 +46,132 @@ def get_articles_from_filepath(path, start, end):
 
 
 ## filter out irrelevant parts of speech
-def filter_support_words(article):
-    tagged = (nltk.pos_tag(nltk.word_tokenize(article)))
+def filter_support_words(tokens):
+    tagged = (nltk.pos_tag(tokens))
     filt = set(["MD","CD","IN"])
     words = [tup[0] for tup in tagged if tup[1] not in filt]
     return words
-        
+       
 
 ## helper method for text cleanup
-def text_cleanup(text, filter_support=False):
-	def get_lemma(word):
-		return WordNetLemmatizer().lemmatize(word)
-	def get_stem(word):
-		stemmer = PorterStemmer()
-		return stemmer.stem(word)
-
+def text_cleanup(text, filter_support=False,proper_nouns=[]):
 	stop_words = set(stopwords.words('english'))
 	months = ["january","february","march","april","may","june","july","august","september","october","november","december"]
 
+	tokens = nltk.word_tokenize(text)
 	if filter_support:
-		tokens = filter_support_words(text)
-	else:
-		tokens = nltk.word_tokenize(text)
-	tokens = [token for token in tokens if (token).isalpha() and len(token)>2]
-	tokens = [token for token in tokens if token.lower() not in stop_words]
-	tokens = [token for token in tokens if token.lower() not in months]
-	tokens = [get_lemma(token.lower()) for token in tokens]
-	tokens = [get_stem(token) for token in tokens]
+		tokens = filter_support_words(tokens)
+	
+	def filt(token):
+		if token not in proper_nouns:
+			token = token.lower()
+		return (token.isalpha() and len(token)>2 and (token not in stop_words) and (token not in months)) 
+	
+	## stem & lemmatize tokens
+	def lemma_stem(token):
+		if token in proper_nouns:
+			return token
+		token = token.lower()
+		stemmer = PorterStemmer()
+		lemma = WordNetLemmatizer().lemmatize(token)
+		return stemmer.stem(lemma)
+
+	tokens = [lemma_stem(token) for token in tokens if filt(token)]
+	
 	return tokens
+ 
+
+def needles_cleanup(needles):
+	def stem(token):
+		if token[0].isupper():
+			return token
+		stemmer = PorterStemmer()
+		return stemmer.stem(token)
+	return set([stem(wd) for wd in needles])
 
 
-# the 15 words around a sentence
+# the 15 words around a sentence -- organized in articles: [[][]]
 def get_collocations(articles, keywords, opposite_keywords,exclude=[]): 
+	# needles = set([stemmer.stem(s.lower()) for s in keywords])
+	# anti_needles = set([stemmer.stem(s.lower()) for s in (opposite_keywords+exclude)])
+
+	needles = needles_cleanup(keywords)
+	anti_needles = needles_cleanup(opposite_keywords+exclude)
+
+	proper_nouns = [wd for wd in (keywords+opposite_keywords+exclude) if wd[0].isupper()]
+	# print (proper_nouns)
+
+	collocations = []
+	rel_articles = []
+
+	for article in articles:
+		title, date_publish, text = article.title, article.date_publish, article.text
+		words = text_cleanup(text,filter_support=True,proper_nouns=proper_nouns) # filter & tokenize words
+
+		article_collocations = []
+		
+		i = 0
+		while i < len(words):
+			word = words[i]
+			if word in needles:
+				start_i = max(0, i-15)
+				end_i = min(i+15, len(words)-1)
+				surround = words[start_i:end_i]
+
+				haystack = set(surround)
+				if len(haystack.intersection(anti_needles)) == 0:
+					article_collocations += [w for w in surround if w not in needles and w not in ["presid","parti"]]
+					i = end_i+15
+
+					# print (word)
+					# print (" ".join(surround))
+					# print ("\n")
+			i+=1
+
+		if len(article_collocations)>0:
+			collocations.append(article_collocations)
+			rel_articles.append(article)
+	# collocations = [word for word in collocations if word.lower() not in keywords and not in exclude]
+	return collocations, rel_articles
+
+
+# the 15 words around a sentence -- organized in articles: [[][]]
+def get_collocations_without_tokenizing(articles, keywords, opposite_keywords,exclude=[]): 
 	stemmer = PorterStemmer() 
 
 	needles = set([stemmer.stem(s.lower()) for s in keywords])
 	anti_needles = set([stemmer.stem(s.lower()) for s in (opposite_keywords+exclude)])
 
 	collocations = []
+	rel_articles = []
+
 	for article in articles:
 		title, date_publish, text = article.title, article.date_publish, article.text
-		sentences = tokenize.sent_tokenize(text)
-		words = text_cleanup(text,filter_support=True)
-		# tokened_s = [text_cleanup(sent, filter_support=True) for sent in sentences]
-
-		# for n, sent in enumerate(tokened_s):
-		#     haystack = set([s.lower() for s in sent])
-		#     if len(haystack.intersection(needles)) > 0 and len(haystack.intersection(anti_needles)) == 0:
-		#         collocations += sent
-		for n, word in enumerate(words):
+		# sentences = tokenize.sent_tokenize(text)
+		words = text.split(" ")
+		#words = nltk.word_tokenize(text)
+		article_collocations = ""
+		
+		i = 0
+		while i < len(words):
+			word = words[i]
 			if word in needles:
-				start_i = max(0, n-15)
-				end_i = min(n+15, len(words)-1)
+				start_i = max(0, i-15)
+				end_i = min(i+15, len(words)-1)
 				surround = words[start_i:end_i]
 
 				haystack = set([s.lower() for s in surround])
 				if len(haystack.intersection(anti_needles)) == 0:
-					collocations += [w for w in surround if w.lower() not in needles and w.lower() not in ["presid","parti"]]
+					sent = " ".join(surround)
+					article_collocations += (sent)
+					i = end_i+15
+			i+=1
 
+		if len(article_collocations)>0:
+			collocations.append(article_collocations)
+			rel_articles.append(article)
 	# collocations = [word for word in collocations if word.lower() not in keywords and not in exclude]
-	return collocations
+	return collocations, rel_articles
 
 
 # collocations, except preserving article order
@@ -163,6 +229,7 @@ def embeddings(articles, keywords):
 def topic_model(articles, keywords, print_words=False):
 	needles = set([s.lower() for s in keywords])
 
+	# CHANGE!!!!!!
 	doc = []
 	for article in articles:
 		words = text_cleanup(article.text, filter_support=True)
@@ -201,7 +268,7 @@ def topic_model(articles, keywords, print_words=False):
 
 
 if __name__ == '__main__':
-	path = "."
+	path = "NYT-OPINION2012-2013-processed/"
 	
 	start = datetime.datetime(2012, 6, 1)
 	end = datetime.datetime(2013, 7, 1)
@@ -210,11 +277,11 @@ if __name__ == '__main__':
 
 	print ("finished grabbing articles")
 
-	left_collocations = get_collocations(articles, LEFT_WORDS,RIGHT_WORDS)
+	left_collocations, l_arts = get_collocations(articles, LEFT_WORDS,RIGHT_WORDS)
 	# romney_collocations = get_collocations(articles, ["conservative", "conservatives", "conservatism"])
 	
-	print (left_collocations[:500])
-	print (len(left_collocations))
+	# print (left_collocations[:500])
+	# print (len(left_collocations))
 
 	# print (romney_collocations[32])
 	# print (len(romney_collocations))

@@ -49,35 +49,47 @@ def pearson(p, r, d, tr, td):
 	return float(num)/denom
 
 
-def get_most_polar(left_ngrams_article, right_ngrams_article):
+# takes in the document frequency matrix for left & right
+def get_most_polar(left_collocations, right_collocations):
 	def filt(p):
 		filtlist = ["columnist", "thank","editor","editori","newslett","stori","click","product","contribut"]
 		for w in filtlist:
 			if w in p:
 				return False
 		return True
-
-	l = defaultdict(lambda: 0)
-	for p,c in left_ngrams_article.most_common():
-		l[p] = c
-	
-	r = defaultdict(lambda: 0)
-	for p,c in right_ngrams_article.most_common():
-		r[p] = c
 	    
-	TL = sum([count for ngram,count in l.items()])
-	TR = sum([count for ngram,count in r.items()])
+	cv = CV(decode_error = 'ignore',
+			binary = False, ngram_range=(1,3))
+
+	# fit to cv, grab vocabulary, and then sum counts
+	left_cv = cv.fit_transform(left_collocations)
+	
+	left_vocab = cv.vocabulary_
+	left_d = np.asarray(left_cv.sum(axis=0))[0]
+
+
+	right_cv = cv.fit_transform(right_collocations)	
+	
+	right_vocab = cv.vocabulary_
+	right_d = np.asarray(right_cv.sum(axis=0))[0]
+
+
+	# counts of total usages
+	TL = sum(left_d)
+	TR = sum(right_d)
 
 	# put into usage dictionaries
 	l = defaultdict(lambda: 0)
-	for p,c in left_ngrams_article.most_common():
-		if filt(p) and c < .00039*TL:
-			l[p] = c
+	for phrase,index in left_vocab.items(): 
+		count = left_d[index]
+		if filt(phrase) and count < .00039*TL:
+			l[phrase] = count
 	    
 	r = defaultdict(lambda: 0)
-	for p,c in right_ngrams_article.most_common():
-		if filt(p) and c < .00039*TR:
-			r[p] = c
+	for phrase,index in right_vocab.items(): 
+		count = right_d[index]
+		if filt(phrase) and count < .00039*TR:
+			r[phrase] = count
 
 	# gathered pearson's stats for all trigrams
 	pearson_scores = []
@@ -88,13 +100,14 @@ def get_most_polar(left_ngrams_article, right_ngrams_article):
 		pearson_scores.append((trigram, chi2))
 
 	# sorted all trigrams in order of most likely to be polar
+	# print ("PRINTING MOST POLAR")
 	sorted_tot = sorted(pearson_scores, key=lambda x:x[1],reverse=True)
-	for i in sorted_tot[:150]:
-		print("{}.{}.{}\t\t".format(i[0][0],i[0][1],i[0][2]), i[1])
+	# for i in sorted_tot[:100]:
+	# 	print("{}\t\t".format(i[0]), i[1])
 
 	total_ngrams = sorted_tot[:10000]
 
-	return total_ngrams
+	return total_ngrams, l,r
 
 
 def get_polarity_score_bayesian():
@@ -104,35 +117,74 @@ def get_polarity_score_bayesian():
 	with open ('right_collocations_article.pkl', 'rb') as fp:
 		right_collocations_article = pickle.load(fp)
 
-	# turn collocations into ngrams
-	ll, left_ngrams_article, left_ngrams_by_article = collocations_to_ngrams(left_collocations_article, 3)
-	rl, right_ngrams_article, right_ngrams_by_article = collocations_to_ngrams(right_collocations_article, 3)
+	# all grams!
+	left = []
+	for article in left_collocations_article:
+		left.append((" ").join(article))
+
+	right = []
+	for article in right_collocations_article:
+		right.append((" ").join(article))
 
 	# sort ngrams by most likely to be polar, according to pearson's statistic
-	total_ngrams = get_most_polar(left_ngrams_article, right_ngrams_article) 
-	
-	# set up bayesian comparison
-	v = ["{} {} {}".format(phr[0],phr[1], phr[2]) for phr, c in total_ngrams]
-	left = ["{} {} {}".format(phr[0],phr[1], phr[2]) for phr in ll]
-	right = ["{} {} {}".format(phr[0],phr[1], phr[2]) for phr in rl]
+	total_ngrams, l_dict, r_dict = get_most_polar(left, right) 
 
-	cv = CV(decode_error = 'ignore', vocabulary=v, ngram_range=(1,3))
+	# ------- ! LOAD ! ------- #
+	with open ('background_corpus_frequencies_CV.pkl', 'rb') as fp:
+		background_freqs = pickle.load(fp)
 
-	r = fw.bayes_compare_language(left,right,cv=cv)
+	v = [phr for phr, c in total_ngrams]
+
+	total = sum([v for k,v in background_freqs.items()])
+
+	prior = []
+	for wd in v:
+		try:
+			y_i = background_freqs[wd]
+			p = 2*y_i #10*(float(y_i)/total)
+		except:
+			p = 2*1 #10*(1./total)
+		prior.append(p)
+	prior = np.array(prior)
+
+
+	cv = CV(decode_error = 'ignore', ngram_range=(1,3),vocabulary=v)
+
+	r = fw.bayes_compare_language(left,right,prior=prior,cv=cv)
 	print (r[:5])
 
-	for i in sorted(r,key=lambda x:x[1]):
-		phr, score = i[0].split(" "),i[1]
-		#print ("{}\t\t{}".format(phr[0],score))
-		print ("{}.{}.{}\t\t{}".format(phr[0],phr[1], phr[2],score))
+
+	sorted_results = sorted(r,key=lambda x:x[1])
+	print_results(sorted_results)
+
+	total_counts = Counter(l_dict) + Counter(r_dict)
+	return sorted_results, total_counts
 
 
-	print (len(total_ngrams))
+def print_results(results):
+	print ("PRINTING - most right")
+	for i in range(len(results)):
+		obj = results[i]
+		phr, score = obj[0],obj[1]
+		print ("{}\t\t{}".format(phr,score))
+		# print ("{}.{}\t\t{}".format(phr[0],phr[1],score))
+		# print ("{}.{}.{}\t\t{}".format(phr[0],phr[1], phr[2],score))
+		if i == 100:
+			break
 
+	print ("PRINTING - most left")
+	for i in range(len(results)-1,-1,-1):
+		obj = results[i]
+		phr, score = obj[0],obj[1]
+		print ("{}\t\t{}".format(phr,score))
+		# print ("{}.{}\t\t{}".format(phr[0],phr[1],score))
+		# print ("{}.{}.{}\t\t{}".format(phr[0],phr[1], phr[2],score))
+		if i == len(results)- 100:
+			break
 
 
 if __name__ == '__main__':
-	get_polarity_score_bayesian()
+	res = get_polarity_score_bayesian()
 
 
 

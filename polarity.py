@@ -129,7 +129,6 @@ def get_polarity_score_bayesian():
 	# sort ngrams by most likely to be polar, according to pearson's statistic
 	total_ngrams, l_dict, r_dict = get_most_polar(left, right) 
 
-
 	# ------- ! LOAD ! ------- #
 	with open ('background_corpus_frequencies_CV.pkl', 'rb') as fp:
 		background_freqs = pickle.load(fp)

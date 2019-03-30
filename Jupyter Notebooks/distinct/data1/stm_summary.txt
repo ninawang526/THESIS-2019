@@ -1,0 +1,151 @@
+A topic model with 30 topics, 6381 documents and a 23344 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: nation, french, land, franc, park, pen, monument 
+ 	 FREX: macron, french, monument, sarkozi, canyon, acr, emmanuel 
+ 	 Lift: acadia, adiarat, alastair, algier, ambienc, anis, artistri 
+ 	 Score: macron, french, pen, fillon, franc, monument, acr 
+Topic 2 Top Words:
+ 	 Highest Prob: vote, parti, elect, voter, candid, support, campaign 
+ 	 FREX: vote, elector, ballot, candid, primari, voter, poll 
+ 	 Lift: levitski, ziblatt, abramson, ajamu, alberga, alyson, aquinnah 
+ 	 Score: vote, voter, elector, parti, candid, stein, poll 
+Topic 3 Top Words:
+ 	 Highest Prob: tax, job, pay, percent, econom, cut, economi 
+ 	 FREX: tax, growth, worker, deficit, incom, wage, rate 
+ 	 Lift: bjelland, depot, hyperglob, inflationari, leviathan, mcgarrahan, mishel 
+ 	 Score: tax, growth, deficit, economi, incom, budget, percent 
+Topic 4 Top Words:
+ 	 Highest Prob: religi, christian, polit, right, church, cathol, evangel 
+ 	 FREX: yiannopoulo, falwel, cathol, christian, evangel, church, religi 
+ 	 Lift: dreher, hamel, metaxa, multiculturalist, papal, yiannopoulo, akbay 
+ 	 Score: christian, evangel, cathol, religi, church, yiannopoulo, gay 
+Topic 5 Top Words:
+ 	 Highest Prob: state, unit, govern, countri, nation, year, right 
+ 	 FREX: cuban, cuba, maduro, colombia, venezuela, colombian, manu 
+ 	 Lift: agua, buendía, burm, catalán, contrav, cyberpoint, delci 
+ 	 Score: cuban, cuba, venezuela, colombia, urib, maduro, manu 
+Topic 6 Top Words:
+ 	 Highest Prob: putin, russia, russian, democraci, american, power, polit 
+ 	 FREX: putin, ukrain, hong, kong, kremlin, soviet, vladimir 
+ 	 Lift: gosdep, tsang, chechnya, lenin, adama, akhmad, aleksei 
+ 	 Score: putin, russia, russian, hong, moscow, kremlin, kong 
+Topic 7 Top Words:
+ 	 Highest Prob: congress, hous, bill, parti, legisl, polit, member 
+ 	 FREX: legisl, caucu, agenda, bill, district, congress, bipartisan 
+ 	 Lift: aardvark, acclimat, adriano, alcantara, antonia, appleg, aran 
+ 	 Score: caucu, congress, district, legisl, issa, obamacar, cuomo 
+Topic 8 Top Words:
+ 	 Highest Prob: news, weekday, today, opinion, campaign, morn, day 
+ 	 FREX: delici, biweek, recip, cook, brief, morn, verifi 
+ 	 Lift: biweek, nehlen, agita, alleyway, analytica, audiotap, aural 
+ 	 Score: delici, biweek, recip, cook, brief, provoc, portman 
+Topic 9 Top Words:
+ 	 Highest Prob: women, men, woman, abort, say, sexual, femal 
+ 	 FREX: women, femal, feminist, girl, ail, male, sex 
+ 	 Lift: cortex, federici, kayfab, silvia, thackeray, ableism, abscond 
+ 	 Score: women, abort, feminist, femal, woman, girl, male 
+Topic 10 Top Words:
+ 	 Highest Prob: get, say, think, peopl, know, thing, make 
+ 	 FREX: gail, arthur, realli, nobodi, guy, actual, mayb 
+ 	 Lift: heer, nauseou, priestess, schmuck, steinbrenn, adulatori, aei 
+ 	 Score: gail, arthur, guy, sorri, weird, wow, crazi 
+Topic 11 Top Words:
+ 	 Highest Prob: black, american, america, white, man, histori, nation 
+ 	 FREX: douglass, slave, slaveri, lincoln, black, museum, lewi 
+ 	 Lift: antiracist, beauregard, langston, abacu, abuelo, adammansbach, adjay 
+ 	 Score: black, racial, douglass, tamir, slave, walcott, lincoln 
+Topic 12 Top Words:
+ 	 Highest Prob: nuclear, china, state, unit, north, korea, world 
+ 	 FREX: korea, nuclear, china, pyongyang, korean, chine, missil 
+ 	 Lift: ahn, airstrip, denuclear, hwang, islet, javad, kaesong 
+ 	 Score: korea, china, nuclear, beij, missil, korean, iran 
+Topic 13 Top Words:
+ 	 Highest Prob: peopl, polit, world, social, way, think, live 
+ 	 FREX: evil, intellectu, distrust, philosoph, contempt, anger, elit 
+ 	 Lift: abash, abduh, alexithymia, anticonserv, archcrit, aron, austenit 
+ 	 Score: philosoph, intellectu, cultur, violenc, intimaci, disabl, aron 
+Topic 14 Top Words:
+ 	 Highest Prob: climat, chang, energi, environ, coal, state, power 
+ 	 FREX: emiss, climat, greenhous, coal, carbon, energi, solar 
+ 	 Lift: biomass, decarbon, emitt, erica, feldstein, gigaton, halstead 
+ 	 Score: emiss, carbon, climat, coal, solar, pruitt, pollut 
+Topic 15 Top Words:
+ 	 Highest Prob: court, state, justic, law, judg, suprem, right 
+ 	 FREX: scalia, court, suprem, gorsuch, judg, vacanc, antonin 
+ 	 Lift: alito, calabresi, corizon, docket, feeney, gerken, glisson 
+ 	 Score: court, gorsuch, suprem, judg, justic, scalia, filibust 
+Topic 16 Top Words:
+ 	 Highest Prob: state, syria, war, unit, militari, american, russia 
+ 	 FREX: assad, syria, kurdish, turkey, erdogan, syrian, turkish 
+ 	 Lift: abdu, adipi, afari, airfield, airpow, airwar, akimbo 
+ 	 Score: assad, syria, erdogan, russia, syrian, turkey, airstrik 
+Topic 17 Top Words:
+ 	 Highest Prob: editor, articl, news, countri, column, american, mani 
+ 	 FREX: editor, calif, column, articl, brook, brooklyn, krugman 
+ 	 Lift: acker, acupunctur, adelia, affecting, affleck, alessandro, annenberg 
+ 	 Score: editor, calif, bruni, articl, krugman, column, tuvel 
+Topic 18 Top Words:
+ 	 Highest Prob: student, school, educ, colleg, univ, children, professor 
+ 	 FREX: student, devo, school, campu, murray, educ, graduat 
+ 	 Lift: heckman, abbi, accentur, ackerman, alessandria, ambridg, anda 
+ 	 Score: student, campu, school, colleg, devo, murray, graduat 
+Topic 19 Top Words:
+ 	 Highest Prob: say, get, peopl, tell, know, want, day 
+ 	 FREX: cub, dad, laugh, harth, matt, stadium, fat 
+ 	 Lift: arbi, baseman, boylan, bozeman, colt, cupich, eateri 
+ 	 Score: cub, harth, houraney, stadium, lobaido, mythili, gianfort 
+Topic 20 Top Words:
+ 	 Highest Prob: muslim, peopl, refug, american, countri, attack, say 
+ 	 FREX: muslim, orlando, hate, mateen, refug, mosqu, holocaust 
+ 	 Lift: bengal, cyberharass, gestapo, hummu, kashmir, kristallnacht, missmuslim 
+ 	 Score: muslim, refug, islam, jew, orlando, terrorist, jewish 
+Topic 21 Top Words:
+ 	 Highest Prob: european, union, britain, europ, parti, polit, leav 
+ 	 FREX: farag, brexit, renzi, merkel, labour, britain, european 
+ 	 Lift: allgemein, ayrault, belfast, bellen, boozi, buccan, bulgarian 
+ 	 Score: britain, european, brexit, labour, europ, merkel, germani 
+Topic 22 Top Words:
+ 	 Highest Prob: percent, white, voter, support, polit, state, black 
+ 	 FREX: survey, percentag, hispan, percent, pew, counti, latino 
+ 	 Lift: bonica, celinda, essentialist, exurb, exurban, farinella, inglehart 
+ 	 Score: voter, percent, counti, black, racial, hispan, latino 
+Topic 23 Top Words:
+ 	 Highest Prob: polic, gun, citi, crime, peopl, law, offic 
+ 	 FREX: gun, polic, sentenc, crime, rifl, crimin, prison 
+ 	 Lift: antron, backpag, bratton, craddick, dabadi, decarc, everytown 
+ 	 Score: polic, gun, crime, prosecutor, prison, hamer, firearm 
+Topic 24 Top Words:
+ 	 Highest Prob: investig, report, email, say, news, comey, intellig 
+ 	 FREX: rosenstein, comey, nune, investig, dossier, leak, intellig 
+ 	 Lift: nune, albino, allar, allard, andropov, apoplect, apuzzo 
+ 	 Score: comey, russian, russia, investig, rosenstein, nune, intellig 
+Topic 25 Top Words:
+ 	 Highest Prob: govern, administr, hous, depart, offic, secur, white 
+ 	 FREX: ethic, depart, agenc, appoint, cabinet, hotel, disclosur 
+ 	 Lift: emolu, shaub, ambassadori, appendectomi, beachhead, carlyl, cha 
+ 	 Score: agenc, ethic, depart, disclosur, snowden, emolu, feder 
+Topic 26 Top Words:
+ 	 Highest Prob: health, care, insur, peopl, plan, american, state 
+ 	 FREX: medicaid, insur, health, obamacar, coverag, care, premium 
+ 	 Lift: aca, adelberg, altam, anaphylaxi, anesthesiologist, anu, avilla 
+ 	 Score: insur, health, medicaid, obamacar, premium, subsidi, coverag 
+Topic 27 Top Words:
+ 	 Highest Prob: immigr, american, border, war, veteran, mexico, vietnam 
+ 	 FREX: afghan, veteran, deport, vietnam, undocu, taliban, nieto 
+ 	 Lift: bamboo, bergdahl, bui, burrow, cong, ghraib, hoa 
+ 	 Score: vietnam, immigr, afghan, taliban, deport, afghanistan, veteran 
+Topic 28 Top Words:
+ 	 Highest Prob: israel, state, palestinian, saudi, isra, american, unit 
+ 	 FREX: israel, palestinian, isra, netanyahu, jerusalem, sisi, palestin 
+ 	 Lift: hayom, odeh, yair, isra, jerusalem, mustafa, netanyahu 
+ 	 Score: israel, palestinian, isra, netanyahu, saudi, jerusalem, arabia 
+Topic 29 Top Words:
+ 	 Highest Prob: say, year, water, food, use, make, work 
+ 	 FREX: chlorpyrifo, pipelin, speci, fish, tree, thiel, agricultur 
+ 	 Lift: aeronaut, anthropocen, bacterium, borer, bristol, chlorpyrifo, clarreo 
+ 	 Score: chlorpyrifo, wildlif, roxanna, speci, thwait, whale, osha 
+Topic 30 Top Words:
+ 	 Highest Prob: compani, busi, financ, money, street, make, sell 
+ 	 FREX: investor, googl, loan, compani, internet, stock, user 
+ 	 Lift: ajit, directv, doubleclick, goodstein, honda, issacharoff, lovin 
+ 	 Score: compani, investor, fiduciari, internet, googl, loan, facebook 

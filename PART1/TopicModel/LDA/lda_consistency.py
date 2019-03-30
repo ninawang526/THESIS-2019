@@ -28,15 +28,17 @@ def total_topic_distribution(model, corpus):
     return dist
 
 
-def to_distro(dist):
-    ids, probs = list(dist.keys()), list(dist.values())
-    distro = dit.ScalarDistribution(ids, probs)
-    return distro
+def to_js_distro(distro):
+    ids, probs = list(distro.keys()), list(distro.values())
+    js_distro = dit.ScalarDistribution(ids, probs)
+    return js_distro
 
 
-def compare_topic_distributions(d1, d2):
-    X, Y = to_distro(d1), to_distro(d2)
-    return jensen_shannon_divergence([X,Y])
+def compare_topic_distributions(distros):
+	js_distros = []
+	for distro in distros:
+		js_distros.append(to_js_distro(distro))
+	return jensen_shannon_divergence(js_distros)
     
 
 def graph_distribution(dist):
@@ -50,12 +52,11 @@ def graph_distribution(dist):
 
 
 
+
 if __name__ == '__main__':
 	path = "/Users/ninawang/Thesis/remote/THESIS2019/example_data/NYT-OPINION2012-2013-processed/"
-
 	start = datetime.datetime(2012, 6, 1)
 	end = datetime.datetime(2013, 7, 1)
-
 	articles = lex.get_articles_from_filepath(path,start,end)
 
 	# articles, dictionary, corpus, model = lex.topic_model(articles, LEFT_WORDS+RIGHT_WORDS,num_topics=20)

@@ -1,6 +1,11 @@
 #-----#-----DEMOGRAPHIC WORDS-----#-----#
-LEFT_WORDS = ["Democrat", "Democrats", "Democratic", "liberal", "liberals", "liberalism", "left wing", "Obama", "Biden", "Clinton", "Kaine", "Sanders", "Barack", "Hillary", "Bernie"]
-RIGHT_WORDS = ["Republican", "Republicans", "conservative", "conservatives", "conservatism", "right wing", "McCain", "Palin", "Ron Paul", "Mitt", "Romney", "Paul Ryan", "Gingrich", "Santorum", "Michelle Bachmann", "Donald", "Trump","Pence", "Kasich", "Cruz", "Rubio", "Carson","Bush", "Fiorina"]
+LEFT_WORDS = ["Democrat", "Democrats", "Democratic", "liberal", "liberals", 
+"liberalism", "left wing", "Obama", "Biden", "Clinton", "Kaine", "Sanders", 
+"Barack", "Hillary", "Bernie"]
+RIGHT_WORDS = ["Republican", "Republicans", "conservative", "conservatives", 
+"conservatism", "gop","right wing", "McCain", "Palin", "Ron Paul", "Mitt", "Romney", 
+"Paul Ryan", "Gingrich", "Santorum", "Michelle Bachmann", "Donald", "Trump",
+"Pence", "Kasich", "Cruz", "Rubio", "Carson","Bush", "Fiorina"]
 
 
 MALE_WORDS = ["man", "men", "male", "boy"]
@@ -21,7 +26,9 @@ NEWS =["advertis_continu", "box_invalid", "read_main", "email_address", "servic_
 "subscrib","error","tri","later","newslett","subscrib","new","york", 'pleas','robot', 'click','box', 'invalid', 'address','pleas', 'select','newslett', 'subscrib','sign', 
 'receiv','occasion', 'updat','special', 'offer','new', 'york','time', 'product','servic', 'thank','subscrib', 'error','occur', 'pleas','tri', 'later','view', 'new','york', 'time','newslett',"today','newslett",
 "front","page","unit_state","tim","pleas_verifi","inbox_monday_friday","invalid_email_address","inbox_monday",
-"deliv_inbox_monday","stori"]
+"deliv_inbox_monday","stori", "commentari", "columnist", "editori", "nyt", "cnn", "pdf","txt","newslett_enter","valid_email","newslett_signup","address_field"
+"signup_center","pleas_click","visit_newslett","first_newslett","soon_sorri","regist_newslett","error_process","newslett_receiv","begin_receiv","pleas_enter","polit_digest",
+"digest_newslett"]
 
 NAMES=["rodham","georg","ryan","obama","clinton","michel","john","marco","cantor","ann","adelson",
 		"ted","christi","mitch","mcconnel","lindsey","graham","jindal","rand","paul","cameron", "eric",
@@ -36,6 +43,7 @@ NAMES=["rodham","georg","ryan","obama","clinton","michel","john","marco","cantor
 TITLES=["secretari","governor","chairman","gov","vice","prime_minist","prime","speaker","presid","congresswoman"
 		"administr","foundat"]
 
+OTHER=["say"]
 
 BANNED = NEWS+NAMES+TITLES
 

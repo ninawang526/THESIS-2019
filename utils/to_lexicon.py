@@ -2,7 +2,9 @@ import datetime, os, re
 import pickle
 import time
 from newsplease import NewsPlease
+
 from THESIS2019.utils.base_words import *
+from THESIS2019.utils.get_articles import *
 
 import nltk
 from nltk import tokenize
@@ -18,51 +20,7 @@ from gensim.models.ldamulticore import LdaMulticore
 from gensim.models.coherencemodel import CoherenceModel
 from gensim.test.utils import common_corpus, common_dictionary
 
-## helper method to filter articles by date & length
-def get_relevant_articles(articles, start, end):
-	filtered_articles = []
-	for article in articles:
-		if article.date_publish is not None:
-			if article.date_publish < start or article.date_publish >= end:
-				continue
-		if article.text is None:
-			continue
-		elif len(article.text.split()) <= 100:
-			continue 
-		filtered_articles.append(article)
-	return filtered_articles
 
-
-## helper method to retrieve articles from path
-def get_articles_from_filepath(path, start, end):
-	articles = []
-	for (dirpath, dirnames, filenames) in os.walk(path):
-		for filename in filenames:
-			if filename.endswith(".pkl"):
-				filepath = os.path.join(dirpath, filename)
-				with open(filepath, 'rb') as input_file:
-					e = pickle.load(input_file)
-					articles.append(e)
-	filtered_articles = get_relevant_articles(articles, start, end)
-	return filtered_articles
-
-
-## gathers all articles containing relevant keyword
-def get_articles_by_keywords(articles, keywords):
-    needles = set([s.lower() for s in keywords])
-    relevant_docs = []
-    
-    # iterate over documents
-    for i in range(len(articles)):
-        article = articles[i]
-        words = text_cleanup(article.text, filter_support=True)
-        haystack = set([s.lower() for s in words])
-
-        if len(haystack.intersection(needles)) > 0:
-            filt_words = [w for w in words if w.lower() not in needles]
-            relevant_docs.append(article)
-
-    return relevant_docs
 
 
 ## filter out irrelevant parts of speech
@@ -297,15 +255,15 @@ def graph_coherence(dictionary, corpus, texts):
 	# plt.legend(("coherence_values"), loc='best')
 	# plt.show()
 
-# article set example: [articles2012, articles2016]
+
 def get_topicmodel_docs(article_set, keywords):
 	needles = set([s.lower() for s in keywords])
 
 	# filter articles for presence of keyword 
-	filt_articles = []
+	filt_articles = {}
 	doc = []
 
-	for articles in article_set:
+	for key,articles in article_set.items():
 		filt_article_set = []
 		for article in articles:
 			words = text_cleanup(article.text, filter_support=True)
@@ -313,7 +271,7 @@ def get_topicmodel_docs(article_set, keywords):
 			if len(haystack.intersection(needles)) > 0:
 				doc.append(words)
 				filt_article_set.append(article)
-		filt_articles.append(filt_article_set)
+		filt_articles[key]=filt_article_set
 
 	filt_doc = []
 	for bow in doc:
@@ -341,13 +299,13 @@ def get_topicmodel_docs(article_set, keywords):
 
 # additional words in the body of the documents
 # don't need to keep track of word probabilities...just bow
-def LDA(articles, keywords, num_topics=15, best_coherence=False):
-
-	print ("one")
+# article set example: {2012:[], 2016:[]}
+def LDA(article_set, keywords, num_topics=15, best_coherence=False):
+	print ("getting docs...")
+	
 	start_time = time.time()
-	# CHANGE!!!!!!
 
-	filt_articles, updated_docs = get_topicmodel_docs(articles,keywords)
+	filt_articles, updated_docs = get_topicmodel_docs(article_set,keywords)
 	
 	# LOAD
 	# with open("topicmodel_docs2016.pkl","rb") as f:
@@ -362,11 +320,10 @@ def LDA(articles, keywords, num_topics=15, best_coherence=False):
 	if best_coherence:
 		graph_coherence(dictionary, corpus, updated_docs)
 
-	print ("getting model")
+	print ("getting LDA model...")
 
 	start_time = time.time()
-	NUM_TOPICS = num_topics #100#15
-	ldamodel = LdaMulticore(corpus, num_topics = NUM_TOPICS, id2word=dictionary, passes=200, workers=5)#passes=200)
+	ldamodel = LdaMulticore(corpus, num_topics = num_topics, id2word=dictionary, passes=50, workers=15)#200
 	
 	with open("ldamodel2.pkl","wb") as f:
 		pickle.dump(ldamodel, f)

@@ -1,0 +1,2420 @@
+topic 13
+distro from BREITBART2012-2013
+twitter 0.010948
+mar 0.010271
+japanes 0.007136
+compani 0.006806
+use 0.006749
+russian 0.006392
+govern 0.005953
+visit 0.005883
+daili 0.005419
+network 0.005230
+
+distro from NATIONALREVIEW2012-2013
+use 0.011771
+anim 0.005996
+year 0.004773
+get 0.004763
+goal 0.004741
+car 0.004009
+citi 0.004000
+much 0.003837
+take 0.003715
+drive 0.003654
+
+distro from FOX2012-2013
+ammunit 0.011819
+year 0.006297
+pendleton 0.005793
+still 0.005680
+peopl 0.005635
+catch 0.005603
+use 0.005561
+buy 0.005484
+onlin 0.005422
+store 0.005349
+
+distro from WASHINGTONEXAMINER2012-2013
+compani 0.007812
+truck 0.007406
+day 0.007234
+show 0.007159
+use 0.005590
+vehicl 0.005482
+make 0.005470
+take 0.005233
+googl 0.004944
+car 0.004876
+
+distro from REUTERS2012-2013
+compani 0.016139
+help 0.009582
+industri 0.008473
+wheeler 0.007977
+technolog 0.007680
+commun 0.006671
+home 0.006590
+show 0.006138
+use 0.005758
+make 0.005603
+
+distro from NPR2012-2013
+make 0.010424
+use 0.007727
+get 0.007195
+peopl 0.006071
+enlarg_imag 0.005364
+know 0.005302
+come 0.005157
+compani 0.005059
+think 0.004640
+work 0.004587
+
+distro from NYT2012-2013
+itali 0.007962
+italian 0.005304
+use 0.005230
+brain 0.004960
+make 0.004716
+come 0.004341
+technolog 0.004204
+human 0.004199
+place 0.003894
+berlusconi 0.003673
+
+distro from MSN2012-2013
+berlin 0.009106
+citi 0.008928
+famili 0.007664
+hotel 0.007512
+get 0.006280
+travel 0.005580
+stay 0.004572
+room 0.004561
+kid 0.004524
+take 0.004233
+
+distro from CNN2012-2013
+tweet 0.011758
+white_hous 0.010386
+come 0.006217
+use 0.006017
+chicago 0.005992
+photo 0.005566
+twitter 0.005504
+get 0.005355
+peopl 0.005320
+send 0.004973
+
+distro from SLATE2012-2013
+get 0.010327
+peopl 0.010301
+work 0.010281
+make 0.010278
+photo 0.008562
+use 0.008486
+offic 0.007487
+day 0.007269
+call 0.006057
+send 0.005668
+
+topic 17
+distro from BREITBART2012-2013
+kill 0.014304
+protest 0.013263
+polic 0.010712
+fire 0.009411
+bomb 0.007968
+report 0.007480
+taliban 0.007305
+attack 0.007224
+islam 0.006041
+muslim 0.005816
+
+distro from NATIONALREVIEW2012-2013
+state 0.015528
+standard 0.010262
+report 0.007585
+citi 0.007547
+fire 0.006633
+student 0.006407
+common_core 0.006154
+kill 0.005406
+school 0.004845
+local 0.004683
+
+distro from FOX2012-2013
+polic 0.010702
+bomb 0.007930
+suspect 0.005228
+author 0.005038
+offici 0.004805
+tell 0.004521
+boston 0.004441
+investig 0.004090
+kill 0.004079
+tsarnaev 0.003887
+
+distro from WASHINGTONEXAMINER2012-2013
+fbi 0.011176
+bomb 0.010127
+citi 0.007233
+boston 0.007152
+arrest 0.006784
+charg 0.006499
+polic 0.005750
+offic 0.005274
+author 0.005105
+home 0.005049
+
+distro from REUTERS2012-2013
+case 0.009851
+polic 0.009472
+sexual_assault 0.008215
+air_forc 0.008148
+fbi 0.007806
+bomb 0.007600
+charg 0.007435
+court 0.007354
+arrest 0.006373
+attack 0.006058
+
+distro from NPR2012-2013
+water 0.008124
+boy 0.007138
+anim 0.007075
+enlarg_imag 0.005826
+ice 0.004047
+polic 0.003942
+peopl 0.003835
+go 0.003400
+call 0.003389
+texa 0.003265
+
+distro from NYT2012-2013
+polic 0.009139
+offic 0.007104
+park 0.006818
+sexual_assault 0.005716
+victim 0.005641
+crime 0.005536
+charg 0.005523
+report 0.005315
+prison 0.005079
+peopl 0.005022
+
+distro from MSN2012-2013
+fire 0.007023
+report 0.006967
+polic 0.006958
+find 0.006424
+tell 0.006300
+facebook 0.005973
+edward 0.005887
+news_twitter 0.004976
+peopl 0.004862
+content_nbc 0.004808
+
+distro from CNN2012-2013
+bomb 0.011251
+boston 0.009340
+author 0.009332
+investig 0.008450
+polic 0.008018
+peopl 0.007816
+suspect 0.007728
+kill 0.006711
+tsarnaev 0.006431
+attack 0.006192
+
+distro from SLATE2012-2013
+boston 0.009739
+citi 0.006658
+kill 0.006566
+polic 0.006542
+report 0.006311
+peopl 0.006150
+hunter 0.005743
+spencer 0.005464
+day 0.005336
+imag 0.004896
+
+topic 4
+distro from BREITBART2012-2013
+group 0.021481
+fund 0.014113
+famili 0.012558
+organ 0.011427
+former 0.010954
+polit 0.008569
+employe 0.008123
+accus 0.007953
+campaign 0.007397
+state 0.007166
+
+distro from NATIONALREVIEW2012-2013
+compani 0.017301
+union 0.015367
+busi 0.012365
+worker 0.010291
+corpor 0.009313
+fund 0.008448
+employe 0.007929
+pay 0.007509
+firm 0.007228
+support 0.007199
+
+distro from FOX2012-2013
+veteran 0.011817
+money 0.009741
+compani 0.008743
+also 0.008474
+group 0.007821
+report 0.007541
+campaign 0.007150
+accord 0.006911
+donor 0.006910
+former 0.006220
+
+distro from WASHINGTONEXAMINER2012-2013
+report 0.007116
+state 0.006104
+feder 0.006000
+also 0.005831
+accord 0.005765
+claim 0.005485
+offici 0.005249
+year 0.005155
+spend 0.004987
+veteran 0.004649
+
+distro from REUTERS2012-2013
+citi 0.016984
+former 0.009148
+report 0.007121
+state 0.007100
+mayor 0.006442
+campaign 0.006425
+accord 0.006097
+also 0.006034
+offic 0.004864
+compani 0.004808
+
+distro from NPR2012-2013
+citi 0.034560
+state 0.027363
+onlin 0.016101
+compani 0.012505
+money 0.010232
+tax 0.008821
+mayor 0.008816
+campaign 0.008118
+bill 0.006419
+polit 0.005374
+
+distro from NYT2012-2013
+money 0.014409
+compani 0.009804
+polit 0.009471
+campaign 0.008340
+donor 0.006963
+corpor 0.006325
+report 0.005763
+offici 0.005459
+state 0.005403
+govern 0.005314
+
+distro from MSN2012-2013
+campaign 0.027932
+donor 0.012456
+servic_dog 0.011608
+offici 0.009201
+soldier 0.008601
+report 0.008391
+committe 0.008292
+elect 0.008019
+money 0.007169
+former 0.006777
+
+distro from CNN2012-2013
+offici 0.009275
+report 0.008743
+campaign 0.007088
+menendez 0.006191
+pay 0.006027
+also_see 0.005801
+year 0.005792
+compani 0.005430
+offic 0.005011
+former 0.004777
+
+distro from SLATE2012-2013
+campaign 0.028437
+report 0.017816
+slate 0.013454
+year 0.011230
+pay 0.008970
+menendez 0.007996
+magnum_photo 0.007866
+compani 0.007734
+richard_kalvar 0.007364
+money 0.007317
+
+topic 7
+distro from BREITBART2012-2013
+militari 0.022327
+american 0.015644
+troop 0.014907
+war 0.013100
+afghanistan 0.013015
+veteran 0.012265
+soldier 0.010697
+day 0.009177
+make 0.007687
+afghan 0.007011
+
+distro from NATIONALREVIEW2012-2013
+white_hous 0.012269
+get 0.006610
+day 0.005927
+look 0.005873
+back 0.005861
+price 0.005793
+women 0.005455
+take 0.005163
+make 0.005136
+go 0.005097
+
+distro from FOX2012-2013
+white_hous 0.014333
+day 0.007831
+nation 0.006647
+veteran 0.006032
+famili 0.005321
+event 0.005309
+inaugur 0.005233
+sunday 0.005052
+washington 0.004991
+room 0.004944
+
+distro from WASHINGTONEXAMINER2012-2013
+white_hous 0.014922
+washington 0.010155
+inaugur 0.008784
+dinner 0.008561
+event 0.007070
+paul_bedard 0.006159
+address_field 0.006126
+thank_sign 0.006125
+first 0.005842
+nation 0.005703
+
+distro from REUTERS2012-2013
+white_hous 0.019054
+washington 0.006784
+former 0.006238
+day 0.005924
+inaugur 0.005704
+speech 0.005659
+first 0.005355
+ceremoni 0.005345
+monday 0.005049
+nation 0.004921
+
+distro from NPR2012-2013
+white_hous 0.014762
+washington 0.012239
+nation 0.009902
+day 0.009198
+chicago 0.008260
+presidenti 0.006369
+peopl 0.006272
+public 0.005730
+inaugur 0.005571
+former 0.005323
+
+distro from NYT2012-2013
+white_hous 0.025325
+nation 0.011205
+state_union 0.009251
+day 0.008578
+washington 0.008107
+former 0.007577
+go 0.006963
+speech 0.006675
+american 0.006409
+first 0.005991
+
+distro from MSN2012-2013
+day 0.011788
+heat 0.008325
+former 0.007980
+sanduski 0.007147
+citi 0.006915
+first_ladi 0.006347
+go 0.006177
+white_hous 0.005586
+back 0.004907
+parad 0.004849
+
+distro from CNN2012-2013
+white_hous 0.012082
+day 0.007764
+first 0.005066
+get 0.004659
+gut_check 0.003918
+year 0.003869
+former 0.003840
+first_ladi 0.003386
+work 0.003237
+hillari 0.003147
+
+distro from SLATE2012-2013
+white_hous 0.021402
+report 0.015882
+speech 0.012422
+washington 0.008364
+hillari 0.007464
+first 0.006609
+invit 0.005843
+weiner 0.005797
+get 0.005211
+wilson 0.004961
+
+topic 6
+distro from BREITBART2012-2013
+remark 0.032319
+campaign 0.020746
+video 0.018411
+support 0.018232
+comment 0.011974
+advis 0.009095
+fundrais 0.008084
+state 0.007916
+former 0.007657
+critic 0.006883
+
+distro from NATIONALREVIEW2012-2013
+run 0.009631
+former 0.009612
+state 0.008553
+tell 0.008080
+nation_review 0.007508
+candid 0.007477
+group 0.007245
+advis 0.006808
+primari 0.006062
+portman 0.006062
+
+distro from FOX2012-2013
+campaign 0.012680
+state 0.010761
+former 0.009116
+challeng 0.007756
+parti 0.007447
+take 0.007200
+also 0.006889
+kentucki 0.006868
+baucu 0.006858
+judd 0.006459
+
+distro from WASHINGTONEXAMINER2012-2013
+campaign 0.028781
+fundrais 0.013941
+parti 0.012718
+support 0.009821
+candid 0.008667
+home 0.008200
+elect 0.007356
+state 0.007149
+volunt 0.006410
+also 0.006251
+
+distro from REUTERS2012-2013
+state 0.017185
+parti 0.012257
+support 0.012224
+campaign 0.011194
+marriag 0.011164
+run 0.007616
+seat 0.006939
+california 0.006935
+gay_marriag 0.006888
+gay 0.006403
+
+distro from NPR2012-2013
+state 0.010244
+support 0.010146
+marriag 0.010145
+chicago 0.009827
+illinoi 0.009764
+vote 0.009513
+leav 0.008682
+gillibrand 0.007749
+issu 0.007638
+former 0.006805
+
+distro from NYT2012-2013
+jackson 0.020860
+state 0.012653
+black 0.012635
+run 0.012282
+campaign 0.008714
+former 0.007704
+candid 0.007469
+support 0.006330
+year 0.006074
+washington 0.005658
+
+distro from MSN2012-2013
+state 0.019067
+parti 0.011885
+portman 0.011537
+candid 0.011343
+support 0.010710
+convent 0.008817
+campaign 0.008410
+former 0.007186
+polit 0.007046
+run 0.006836
+
+distro from CNN2012-2013
+run 0.010230
+state 0.008970
+day_ago 0.008707
+year 0.007676
+parti 0.007268
+elect 0.007220
+former 0.006517
+also 0.006374
+campaign 0.006329
+follow_politicaltick 0.006035
+
+distro from SLATE2012-2013
+parti 0.023628
+candid 0.011477
+support 0.011415
+convent 0.010860
+brown 0.010280
+state 0.008002
+report 0.007737
+portman 0.007566
+conserv 0.007026
+former 0.005898
+
+topic 1
+distro from BREITBART2012-2013
+leav 0.008518
+america 0.006029
+world 0.005518
+nation 0.005408
+street 0.004967
+gener 0.004820
+american 0.004729
+countri 0.004451
+leader 0.004197
+movement 0.004190
+
+distro from NATIONALREVIEW2012-2013
+conserv 0.009280
+american 0.009266
+liber 0.007196
+polit 0.007018
+america 0.006312
+nation 0.005992
+make 0.005057
+govern 0.004676
+leav 0.004372
+cultur 0.003981
+
+distro from FOX2012-2013
+student 0.010983
+univers 0.009386
+american 0.007129
+mani 0.006085
+flag 0.006009
+colleg 0.005954
+write 0.005722
+lincoln 0.005519
+find 0.005124
+polit 0.004595
+
+distro from WASHINGTONEXAMINER2012-2013
+conserv 0.017047
+liber 0.012715
+american 0.010335
+america 0.009346
+polit 0.007546
+parti 0.007028
+elect 0.006684
+nation 0.006138
+live 0.005557
+write 0.005341
+
+distro from REUTERS2012-2013
+polit 0.010026
+american 0.009697
+america 0.007601
+liber 0.006382
+live 0.005996
+white 0.005136
+book 0.004750
+person 0.004403
+conserv 0.004367
+mani 0.004298
+
+distro from NPR2012-2013
+film 0.009901
+book 0.009437
+life 0.009191
+best 0.006451
+charact 0.005596
+write 0.005496
+movi 0.005285
+work 0.004648
+america 0.004454
+american 0.004306
+
+distro from NYT2012-2013
+govern 0.005402
+parti 0.005263
+countri 0.004941
+becom 0.004764
+write 0.004752
+book 0.004697
+polit 0.004434
+univers 0.004125
+first 0.004083
+life 0.003870
+
+distro from MSN2012-2013
+sport 0.014146
+olymp 0.007515
+yolo 0.006940
+team 0.005426
+also 0.005380
+way 0.005099
+work 0.005081
+univers 0.004792
+play 0.004791
+life 0.004105
+
+distro from CNN2012-2013
+peopl 0.013396
+make 0.007811
+world 0.007494
+polit 0.006883
+everi 0.006665
+way 0.006398
+futur 0.006390
+america 0.006069
+work 0.006050
+live 0.005792
+
+distro from SLATE2012-2013
+polit 0.013225
+conserv 0.012706
+parti 0.010128
+govern 0.007719
+power 0.005842
+write 0.005743
+public 0.005424
+peopl 0.004678
+presidenti 0.004643
+make 0.004439
+
+topic 11
+distro from BREITBART2012-2013
+hagel 0.018255
+israel 0.008907
+egypt 0.007324
+administr 0.007117
+morsi 0.006854
+islam 0.005553
+american 0.004689
+even 0.004560
+muslim_brotherhood 0.004356
+polici 0.004306
+
+distro from NATIONALREVIEW2012-2013
+american 0.008061
+administr 0.005474
+war 0.005041
+even 0.004379
+islam 0.003771
+world 0.003721
+polici 0.003694
+power 0.003610
+countri 0.003489
+islamist 0.003400
+
+distro from FOX2012-2013
+war 0.010236
+american 0.008168
+mosqu 0.005630
+america 0.005562
+polici 0.005505
+give 0.005495
+becom 0.004644
+govern 0.004527
+kill 0.004523
+egypt 0.004491
+
+distro from WASHINGTONEXAMINER2012-2013
+war 0.012031
+opinion_digest 0.010335
+america 0.008647
+american 0.008254
+attack 0.006652
+polici 0.006195
+govern 0.005970
+nation 0.005483
+sign_opinion 0.004671
+militari 0.004595
+
+distro from REUTERS2012-2013
+militari 0.034737
+women 0.016259
+prison 0.015360
+pentagon 0.010730
+end 0.009587
+combat 0.009022
+war 0.008532
+guantanamo 0.007301
+job 0.007095
+polici 0.006290
+
+distro from NPR2012-2013
+militari 0.018988
+women 0.009458
+war 0.008556
+power 0.008516
+american 0.007819
+want 0.007111
+make 0.006466
+decis 0.006404
+muslim 0.006070
+home 0.005849
+
+distro from NYT2012-2013
+militari 0.010667
+war 0.010519
+american 0.007642
+women 0.007579
+forc 0.006910
+power 0.006086
+even 0.005612
+america 0.005547
+end 0.004959
+make 0.004621
+
+distro from MSN2012-2013
+american 0.011594
+spanier 0.009264
+america 0.006545
+militari 0.006485
+war 0.006145
+natur 0.005173
+bring 0.004933
+risk 0.004392
+power 0.004232
+former 0.004212
+
+distro from CNN2012-2013
+american 0.019400
+war 0.012404
+countri 0.007634
+speech 0.007477
+america 0.007345
+respons 0.005778
+polici 0.005267
+militari 0.005139
+take 0.004972
+right 0.004903
+
+distro from SLATE2012-2013
+american 0.008473
+foreign_polici 0.007425
+attack 0.007206
+right 0.007177
+world 0.006156
+statement 0.005472
+issu 0.005202
+war 0.005015
+mean 0.004953
+embassi 0.004713
+
+topic 16
+distro from BREITBART2012-2013
+china 0.015500
+countri 0.013706
+money 0.009968
+bank 0.008077
+percent 0.007385
+financi 0.005857
+peopl 0.005696
+price 0.005034
+govern 0.004812
+world 0.004803
+
+distro from NATIONALREVIEW2012-2013
+percent 0.014440
+govern 0.008696
+economi 0.008012
+job 0.007828
+econom 0.007424
+american 0.007243
+year 0.006813
+cost 0.005746
+polici 0.004689
+peopl 0.004188
+
+distro from FOX2012-2013
+percent 0.044235
+compani 0.012545
+increas 0.008724
+bridg 0.008565
+busi 0.007670
+cost 0.007216
+job 0.006924
+economi 0.006501
+nation 0.006446
+govern 0.006414
+
+distro from WASHINGTONEXAMINER2012-2013
+percent 0.016086
+govern 0.009906
+american 0.009220
+job 0.009000
+compani 0.008247
+economi 0.007380
+busi 0.005202
+year 0.004815
+polici 0.004549
+make 0.004529
+
+distro from REUTERS2012-2013
+percent 0.018742
+year 0.010667
+state 0.008014
+propos 0.007872
+increas 0.007277
+program 0.007170
+busi 0.007078
+compani 0.007047
+cost 0.006506
+economi 0.006415
+
+distro from NPR2012-2013
+job 0.011086
+hospit 0.010073
+pay 0.010010
+price 0.009077
+compani 0.008165
+peopl 0.008013
+cost 0.007789
+make 0.007523
+work 0.007313
+get 0.007250
+
+distro from NYT2012-2013
+percent 0.009887
+econom 0.009194
+economi 0.007841
+american 0.006273
+invest 0.005912
+govern 0.005825
+work 0.005793
+job 0.005634
+polici 0.005267
+make 0.005235
+
+distro from MSN2012-2013
+percent 0.033079
+economi 0.014104
+job 0.010357
+report 0.009602
+state 0.007399
+number 0.006202
+show 0.005037
+american 0.005031
+year 0.004666
+econom 0.004564
+
+distro from CNN2012-2013
+poll 0.028030
+percent 0.018632
+american 0.015631
+voter 0.015551
+survey 0.015315
+job 0.013205
+point 0.011452
+number 0.010960
+support 0.007837
+approv 0.007179
+
+distro from SLATE2012-2013
+percent 0.047661
+poll 0.015164
+job 0.012248
+economi 0.010741
+american 0.009791
+number 0.008667
+better 0.007996
+econom 0.007971
+year 0.007795
+voter 0.006348
+
+topic 14
+distro from BREITBART2012-2013
+chavez 0.015748
+christian 0.011306
+church 0.010919
+cathol 0.009651
+pope 0.009496
+cardin 0.008729
+venezuela 0.007923
+religi_freedom 0.007804
+also 0.007175
+vatican 0.006415
+
+distro from NATIONALREVIEW2012-2013
+obamacar 0.013417
+abort 0.011656
+state 0.011291
+law 0.009533
+women 0.007003
+txt_flash 0.006903
+mandat 0.006115
+insur 0.005591
+provid 0.005484
+cathol 0.005260
+
+distro from FOX2012-2013
+law 0.036395
+state 0.017533
+health 0.011446
+health_care 0.010079
+insur 0.009096
+feder 0.008633
+lawsuit 0.008274
+requir 0.007412
+coverag 0.007243
+obamacar 0.006865
+
+distro from WASHINGTONEXAMINER2012-2013
+law 0.022034
+health_care 0.019170
+obamacar 0.015725
+state 0.010053
+abort 0.009104
+health 0.008785
+plan 0.008509
+requir 0.008049
+insur 0.006318
+provid 0.005794
+
+distro from REUTERS2012-2013
+state 0.033156
+law 0.013754
+bill 0.008888
+plan 0.007196
+health 0.006538
+administr 0.005926
+requir 0.005906
+arkansa 0.005352
+includ 0.005312
+provid 0.005035
+
+distro from NPR2012-2013
+law 0.024844
+peopl 0.013480
+health 0.011737
+church 0.010755
+state 0.010108
+health_care 0.009997
+insur 0.008490
+obamacar 0.006959
+cathol 0.006575
+percent 0.006404
+
+distro from NYT2012-2013
+health_care 0.016822
+law 0.014360
+church 0.011769
+health 0.011328
+peopl 0.009758
+insur 0.009081
+coverag 0.009058
+cathol 0.008918
+pope 0.007918
+health_insur 0.007143
+
+distro from MSN2012-2013
+state 0.023335
+law 0.013819
+insur 0.013393
+health_care 0.013139
+women 0.012167
+health 0.010575
+peopl 0.008728
+health_insur 0.008158
+coverag 0.008044
+pay 0.007907
+
+distro from CNN2012-2013
+law 0.017420
+state 0.012862
+health 0.009315
+health_care 0.008675
+women 0.008227
+travel 0.007722
+plan 0.007616
+abort 0.006992
+provid 0.006779
+obamacar 0.006433
+
+distro from SLATE2012-2013
+abort 0.020964
+law 0.018931
+health_care 0.017852
+tax 0.016509
+women 0.011286
+state 0.011027
+obamacar 0.008566
+get 0.005947
+penalti 0.005686
+cost 0.005528
+
+topic 5
+distro from BREITBART2012-2013
+fbi 0.013673
+investig 0.010792
+document 0.008973
+administr 0.008760
+report 0.008430
+charg 0.007095
+boomer 0.006928
+fraud 0.006868
+scandal 0.006303
+letter 0.006239
+
+distro from NATIONALREVIEW2012-2013
+claim 0.008909
+law 0.008613
+administr 0.008079
+perez 0.008054
+report 0.007714
+group 0.007015
+inform 0.006854
+organ 0.006579
+offici 0.006578
+case 0.006348
+
+distro from FOX2012-2013
+ir 0.016281
+group 0.014830
+inform 0.012396
+agenc 0.010788
+investig 0.010382
+report 0.008444
+govern 0.007831
+offici 0.007375
+letter 0.007245
+request 0.007167
+
+distro from WASHINGTONEXAMINER2012-2013
+ir 0.013481
+agenc 0.013473
+investig 0.013188
+offici 0.012902
+inform 0.011836
+request 0.011729
+committe 0.009618
+letter 0.008973
+report 0.008667
+group 0.008531
+
+distro from REUTERS2012-2013
+ir 0.016703
+group 0.013397
+report 0.011238
+investig 0.010169
+offici 0.007889
+agenc 0.007465
+letter 0.007238
+committe 0.006304
+govern 0.006209
+polit 0.006126
+
+distro from NPR2012-2013
+know 0.011755
+rule 0.011456
+group 0.010909
+koop 0.007496
+ir 0.007050
+regul 0.006997
+write 0.006701
+davi 0.006494
+law 0.006261
+letter 0.006119
+
+distro from NYT2012-2013
+group 0.017612
+polit 0.013377
+agenc 0.010180
+organ 0.007828
+offici 0.007419
+know 0.006542
+administr 0.006504
+hear 0.006266
+investig 0.006196
+scandal 0.006118
+
+distro from MSN2012-2013
+committe 0.018737
+attorney_gener 0.014474
+report 0.012996
+document 0.012084
+depart 0.010820
+investig 0.009871
+letter 0.008283
+fast_furiou 0.007113
+eric_holder 0.006497
+holder 0.006253
+
+distro from CNN2012-2013
+report 0.017032
+group 0.015062
+record 0.011766
+offic 0.010705
+investig 0.009755
+polit 0.009345
+ir 0.009290
+justic_depart 0.008411
+offici 0.007856
+attorney_gener 0.006635
+
+distro from SLATE2012-2013
+govern 0.014569
+group 0.013284
+ir 0.012730
+conserv 0.010605
+report 0.009665
+investig 0.008989
+polit 0.008967
+tea_parti 0.008610
+administr 0.008311
+scandal 0.007503
+
+topic 10
+distro from BREITBART2012-2013
+way 0.012575
+even 0.010443
+word 0.010170
+noth 0.008434
+black 0.007989
+campaign 0.007936
+know 0.006609
+get 0.005797
+gener 0.005693
+cover 0.005621
+
+distro from NATIONALREVIEW2012-2013
+campaign 0.010034
+black 0.008667
+debat 0.008306
+get 0.006782
+know 0.005070
+go 0.004627
+convent 0.004492
+white 0.004245
+peopl 0.004244
+speech 0.004038
+
+distro from FOX2012-2013
+talk 0.009904
+get 0.008305
+campaign 0.008076
+make 0.007688
+appear 0.006296
+comment 0.005964
+tell 0.005073
+want 0.004761
+go 0.004748
+know 0.004363
+
+distro from WASHINGTONEXAMINER2012-2013
+campaign 0.012380
+make 0.008813
+get 0.006667
+union 0.006578
+speech 0.006124
+want 0.005622
+work 0.005212
+peopl 0.004943
+give 0.004822
+run 0.004652
+
+distro from REUTERS2012-2013
+get 0.009231
+detroit 0.008874
+speech 0.008688
+job 0.008399
+cabl 0.007975
+take 0.007181
+work 0.006300
+go 0.006077
+want 0.005725
+talk 0.005185
+
+distro from NPR2012-2013
+edison 0.010521
+get 0.010179
+look 0.007305
+even 0.006109
+tanner 0.006011
+fletcher 0.005458
+brother 0.005204
+take 0.005117
+make 0.004888
+want 0.004659
+
+distro from NYT2012-2013
+citi 0.008941
+get 0.008743
+make 0.006381
+seem 0.005398
+mayor 0.005186
+turn 0.004879
+much 0.004505
+thing 0.004223
+tell 0.004139
+detroit 0.004085
+
+distro from MSN2012-2013
+campaign 0.021468
+speech 0.014289
+make 0.008877
+get 0.007422
+ohio 0.007192
+go 0.006843
+think 0.006518
+speak 0.006447
+give 0.006047
+look 0.004967
+
+distro from CNN2012-2013
+speech 0.023971
+speak 0.014983
+get 0.010735
+take 0.007472
+vice_presid 0.007331
+campaign 0.007102
+go 0.006507
+appear 0.006435
+make 0.006363
+know 0.006344
+
+distro from SLATE2012-2013
+campaign 0.012391
+get 0.009186
+make 0.008145
+candid 0.007025
+debat 0.006828
+go 0.006754
+talk 0.006318
+think 0.006187
+take 0.005242
+know 0.005153
+
+topic 18
+distro from BREITBART2012-2013
+vote 0.041787
+committe 0.021779
+confirm 0.021002
+member 0.017060
+oppos 0.016113
+posit 0.015832
+opposit 0.015637
+support 0.015399
+nomin 0.015257
+filibust 0.008169
+
+distro from NATIONALREVIEW2012-2013
+hous 0.022228
+vote 0.020341
+bill 0.019857
+legisl 0.012904
+member 0.011228
+amend 0.008728
+filibust 0.008707
+conserv 0.008698
+major 0.008401
+rule 0.008379
+
+distro from FOX2012-2013
+bill 0.027916
+hous 0.025949
+vote 0.022064
+legisl 0.010194
+lawmak 0.009848
+measur 0.008593
+congress 0.008151
+pass 0.007919
+propos 0.006853
+leader 0.006553
+
+distro from WASHINGTONEXAMINER2012-2013
+vote 0.023113
+bill 0.023045
+hous 0.016641
+congress 0.015050
+reid 0.014722
+legisl 0.010605
+virginia 0.009387
+conserv 0.006813
+lawmak 0.006570
+leader 0.005650
+
+distro from REUTERS2012-2013
+hous 0.013206
+vote 0.009979
+bill 0.008988
+white_hous 0.007781
+congress 0.007572
+lew 0.005903
+lawmak 0.005222
+committe 0.004926
+washington_washington 0.004723
+legisl 0.004674
+
+distro from NPR2012-2013
+bill 0.025460
+bank 0.017869
+financi 0.017355
+lew 0.016531
+hous 0.013539
+congress 0.013181
+fight 0.013113
+vote 0.012040
+trade 0.010024
+wall_street 0.007048
+
+distro from NYT2012-2013
+vote 0.041416
+hous 0.024471
+bill 0.014199
+committe 0.010862
+nomin 0.010625
+legisl 0.009441
+member 0.008338
+conserv 0.008252
+hold 0.007850
+filibust 0.007680
+
+distro from MSN2012-2013
+vote 0.050540
+hous 0.040164
+bill 0.016722
+legisl 0.011766
+repeal 0.011722
+polit 0.010998
+act 0.010579
+pass 0.010237
+congress 0.009383
+law 0.009125
+
+distro from CNN2012-2013
+vote 0.030616
+hous 0.028285
+bill 0.013735
+congress 0.011125
+reid 0.009032
+pass 0.008999
+measur 0.006725
+debat 0.006696
+legisl 0.006354
+get 0.006208
+
+distro from SLATE2012-2013
+vote 0.032820
+bill 0.020993
+congress 0.016891
+hous 0.014210
+get 0.013982
+filibust 0.011975
+pass 0.011613
+legisl 0.011171
+member 0.007375
+reform 0.007256
+
+topic 12
+distro from BREITBART2012-2013
+law 0.017909
+court 0.017450
+constitut 0.012599
+administr 0.012299
+right 0.011499
+govern 0.011204
+climat_chang 0.010551
+power 0.010125
+legal 0.009031
+decis 0.008279
+
+distro from NATIONALREVIEW2012-2013
+law 0.016762
+power 0.011681
+constitut 0.011143
+congress 0.009318
+administr 0.009212
+use 0.007599
+govern 0.007572
+state 0.007491
+suprem_court 0.007149
+court 0.006395
+
+distro from FOX2012-2013
+epa 0.014184
+natur_ga 0.009649
+use 0.008533
+energi 0.008507
+environment 0.008360
+administr 0.008215
+rule 0.008092
+studi 0.007980
+make 0.007499
+regul 0.007034
+
+distro from WASHINGTONEXAMINER2012-2013
+rule 0.012785
+law 0.010945
+court 0.010348
+epa 0.009308
+suprem_court 0.008448
+use 0.007389
+regul 0.006805
+administr 0.006496
+decis 0.006185
+right 0.006174
+
+distro from REUTERS2012-2013
+energi 0.013524
+rule 0.009144
+administr 0.007927
+state 0.006190
+law 0.005595
+depart 0.005510
+suprem_court 0.004907
+epa 0.004633
+case 0.004573
+agenc 0.004499
+
+distro from NPR2012-2013
+case 0.017135
+law 0.015523
+court 0.014260
+state 0.013165
+suprem_court 0.010329
+energi 0.008149
+chang 0.008055
+make 0.007358
+oil 0.007221
+administr 0.006522
+
+distro from NYT2012-2013
+court 0.018462
+case 0.011753
+law 0.010571
+justic 0.008395
+marriag 0.008377
+suprem_court 0.008292
+legal 0.007227
+state 0.007178
+rule 0.006309
+decis 0.006224
+
+distro from MSN2012-2013
+law 0.021308
+suprem_court 0.015926
+rule 0.012703
+court 0.012372
+state 0.011500
+decis 0.010698
+marriag 0.007678
+case 0.006897
+polici 0.006099
+issu 0.005732
+
+distro from CNN2012-2013
+marriag 0.022425
+issu 0.015373
+state 0.012191
+suprem_court 0.011975
+gay 0.008828
+law 0.008030
+chang 0.007660
+group 0.006483
+approv 0.005459
+energi 0.005313
+
+distro from SLATE2012-2013
+marriag 0.017602
+gay 0.011885
+court 0.011206
+suprem_court 0.010986
+gay_marriag 0.008239
+support 0.007851
+constitut 0.007772
+law 0.007603
+state 0.006751
+right 0.006036
+
+topic 9
+distro from BREITBART2012-2013
+israel 0.023081
+iran 0.009926
+isra 0.009761
+palestinian 0.007767
+hama 0.005475
+syria 0.005273
+china 0.005228
+war 0.005072
+netanyahu 0.004382
+also 0.004244
+
+distro from NATIONALREVIEW2012-2013
+israel 0.017222
+iran 0.012237
+palestinian 0.007104
+china 0.006788
+isra 0.006614
+militari 0.006145
+peac 0.005796
+hama 0.005425
+defens 0.005252
+nuclear 0.004740
+
+distro from FOX2012-2013
+countri 0.008096
+offici 0.007912
+syria 0.007870
+weapon 0.006813
+tank 0.006625
+militari 0.006059
+missil 0.005953
+defens 0.005739
+also 0.005480
+israel 0.005397
+
+distro from WASHINGTONEXAMINER2012-2013
+israel 0.022494
+china 0.009634
+iran 0.009630
+foreign 0.008717
+syria 0.008511
+russia 0.007750
+militari 0.007716
+isra 0.007388
+countri 0.007086
+nation 0.005303
+
+distro from REUTERS2012-2013
+syria 0.007309
+countri 0.007244
+offici 0.006086
+forc 0.005961
+govern 0.005716
+iran 0.005687
+militari 0.005379
+washington 0.004608
+secur 0.004471
+visit 0.004340
+
+distro from NPR2012-2013
+govern 0.032425
+africa 0.024013
+china 0.014007
+countri 0.013221
+leader 0.008139
+american 0.007633
+secur 0.006556
+violenc 0.006395
+forc 0.005998
+african 0.005208
+
+distro from NYT2012-2013
+syria 0.010768
+american 0.006493
+iran 0.006342
+china 0.005560
+countri 0.005530
+govern 0.005230
+militari 0.005040
+israel 0.004587
+also 0.004523
+syrian 0.004484
+
+distro from MSN2012-2013
+countri 0.014785
+peac 0.010481
+world 0.010352
+intern 0.009944
+govern 0.008232
+syria 0.006767
+greec 0.005885
+offici 0.005436
+nation 0.005285
+militari 0.005242
+
+distro from CNN2012-2013
+israel 0.008541
+countri 0.008270
+syria 0.008132
+govern 0.006101
+militari 0.005991
+state 0.005587
+nation 0.005122
+meet 0.005066
+offici 0.004798
+leader 0.004710
+
+distro from SLATE2012-2013
+israel 0.013649
+afghanistan 0.010460
+syria 0.009648
+countri 0.008711
+militari 0.006326
+kill 0.006190
+support 0.006013
+report 0.004854
+intern 0.004703
+peac 0.004559
+
+topic 2
+distro from BREITBART2012-2013
+attack 0.015780
+benghazi 0.010303
+administr 0.009423
+state_depart 0.007944
+secur 0.007126
+report 0.006881
+offici 0.006690
+know 0.006578
+question 0.006391
+american 0.006349
+
+distro from NATIONALREVIEW2012-2013
+hagel 0.015490
+attack 0.015294
+administr 0.015285
+white_hous 0.010050
+benghazi 0.009859
+rice 0.008743
+libya 0.007900
+know 0.007188
+secur 0.007178
+tell 0.006029
+
+distro from FOX2012-2013
+attack 0.014969
+administr 0.011342
+secur 0.009720
+offici 0.008541
+white_hous 0.007265
+benghazi 0.007180
+libya 0.005833
+state_depart 0.005753
+american 0.005307
+report 0.005306
+
+distro from WASHINGTONEXAMINER2012-2013
+administr 0.018845
+attack 0.013380
+report 0.011013
+question 0.010830
+benghazi 0.010447
+white_hous 0.010085
+secur 0.009469
+hagel 0.008420
+libya 0.007911
+nation_secur 0.007886
+
+distro from REUTERS2012-2013
+hagel 0.018612
+white_hous 0.008677
+offici 0.008405
+administr 0.007756
+committe 0.007405
+vote 0.007047
+former 0.006871
+nomin 0.006428
+attack 0.005439
+confirm 0.005056
+
+distro from NPR2012-2013
+administr 0.017283
+white_hous 0.011565
+report 0.011369
+kill 0.010753
+cia 0.009057
+attack 0.008580
+agenc 0.007786
+use 0.007754
+nation_secur 0.006301
+offici 0.005828
+
+distro from NYT2012-2013
+hagel 0.009738
+attack 0.009627
+administr 0.009395
+white_hous 0.007466
+american 0.006676
+offici 0.005642
+report 0.005567
+kill 0.005228
+inform 0.005204
+state_depart 0.005128
+
+distro from MSN2012-2013
+leak 0.014591
+administr 0.011161
+report 0.011029
+inform 0.010663
+secur 0.009425
+offici 0.007641
+intellig 0.007414
+investig 0.006687
+nation 0.006179
+question 0.006014
+
+distro from CNN2012-2013
+hagel 0.024555
+nomin 0.009670
+question 0.008891
+administr 0.008255
+also 0.007298
+committe 0.006152
+vote 0.005784
+attack 0.005631
+statement 0.004921
+american 0.004920
+
+distro from SLATE2012-2013
+administr 0.012030
+hagel 0.010608
+attack 0.010443
+benghazi 0.009423
+white_hous 0.008467
+kill 0.007045
+secur 0.007031
+intellig 0.006121
+report 0.005729
+question 0.005584
+
+topic 3
+distro from BREITBART2012-2013
+border 0.019971
+treati 0.019135
+enforc 0.015219
+immigr 0.015027
+program 0.011730
+mexico 0.010001
+secur 0.008613
+illeg 0.007556
+citizen 0.006978
+come 0.006359
+
+distro from NATIONALREVIEW2012-2013
+immigr 0.027298
+hispan 0.010404
+illeg_immigr 0.009550
+amnesti 0.009010
+enforc 0.007752
+reform 0.007409
+border 0.007379
+law 0.006322
+issu 0.005743
+legal 0.005467
+
+distro from FOX2012-2013
+immigr 0.022220
+bill 0.012315
+illeg_immigr 0.010220
+worker 0.010097
+legisl 0.008724
+year 0.008130
+countri 0.006851
+peopl 0.006669
+get 0.006133
+illeg 0.006046
+
+distro from WASHINGTONEXAMINER2012-2013
+immigr 0.024218
+bill 0.016761
+reform 0.010593
+legal 0.009175
+border 0.009148
+secur 0.009103
+illeg_immigr 0.008599
+year 0.007575
+propos 0.005742
+gang 0.005590
+
+distro from REUTERS2012-2013
+bill 0.016862
+immigr 0.014698
+legisl 0.009346
+immigr_reform 0.007814
+group 0.006132
+reform 0.006062
+support 0.005722
+hous 0.005612
+congress 0.005416
+propos 0.005262
+
+distro from NPR2012-2013
+immigr 0.047602
+worker 0.022483
+legal 0.010684
+bill 0.010399
+year 0.009603
+illeg 0.009569
+latino 0.008255
+border 0.007768
+labor 0.007694
+law 0.007160
+
+distro from NYT2012-2013
+immigr 0.019769
+bill 0.013476
+mexico 0.008327
+issu 0.006489
+group 0.005705
+get 0.005565
+support 0.005529
+work 0.005512
+hous 0.005141
+border 0.005081
+
+distro from MSN2012-2013
+immigr 0.050363
+illeg_immigr 0.016608
+latino 0.011251
+arizona 0.010609
+countri 0.007226
+deport 0.007074
+also 0.006404
+illeg 0.006311
+law 0.006043
+support 0.005984
+
+distro from CNN2012-2013
+immigr 0.023171
+bill 0.013055
+immigr_reform 0.011136
+legisl 0.010727
+propos 0.009864
+issu 0.009056
+includ 0.008146
+reform 0.007410
+support 0.007403
+work 0.007328
+
+distro from SLATE2012-2013
+immigr 0.039932
+immigr_reform 0.010481
+work 0.010027
+hispan 0.009798
+nation 0.008690
+law 0.008478
+illeg_immigr 0.008466
+issu 0.008330
+latino 0.007028
+bill 0.006449
+
+topic 0
+distro from BREITBART2012-2013
+weapon 0.052929
+arm 0.037425
+gun 0.030658
+children 0.016261
+ban 0.016199
+use 0.011193
+sale 0.008818
+citi 0.008582
+need 0.008245
+law 0.008201
+
+distro from NATIONALREVIEW2012-2013
+gun 0.037176
+shoot 0.008956
+ban 0.008710
+law 0.007951
+firearm 0.007391
+weapon 0.007101
+nra 0.006509
+second_amend 0.006333
+gun_control 0.006189
+use 0.005911
+
+distro from FOX2012-2013
+gun 0.026698
+state 0.020556
+bill 0.010821
+law 0.009879
+measur 0.009344
+ban 0.009053
+gun_control 0.008672
+legisl 0.008083
+firearm 0.007715
+propos 0.007568
+
+distro from WASHINGTONEXAMINER2012-2013
+gun 0.027795
+gun_control 0.016355
+state 0.009271
+legisl 0.008342
+ban 0.008216
+nra 0.007607
+law 0.007457
+support 0.007131
+measur 0.006723
+right 0.006610
+
+distro from REUTERS2012-2013
+gun 0.016473
+propos 0.009307
+gun_control 0.009289
+state 0.007357
+nra 0.007105
+measur 0.006789
+law 0.006765
+includ 0.006154
+congress 0.006040
+legisl 0.005596
+
+distro from NPR2012-2013
+school 0.035247
+gun 0.021127
+educ 0.020268
+children 0.019115
+shoot 0.013653
+kid 0.010057
+student 0.009096
+state 0.007547
+right 0.007499
+teacher 0.007459
+
+distro from NYT2012-2013
+gun 0.030787
+state 0.014549
+school 0.010968
+shoot 0.010337
+support 0.008665
+peopl 0.008023
+background_check 0.008016
+children 0.006827
+measur 0.006671
+magazin 0.006527
+
+distro from MSN2012-2013
+student 0.083841
+school 0.065879
+gun 0.016316
+day 0.011418
+teacher 0.010774
+nation 0.009615
+state 0.007858
+educ 0.006839
+district 0.006363
+measur 0.005855
+
+distro from CNN2012-2013
+gun 0.019438
+gun_control 0.009861
+background_check 0.009390
+nra 0.009017
+propos 0.008044
+group 0.007605
+support 0.007174
+check 0.006468
+shoot 0.005996
+school 0.005991
+
+distro from SLATE2012-2013
+gun 0.028129
+nra 0.017656
+gun_control 0.015923
+background_check 0.010047
+bill 0.009383
+legisl 0.008364
+peopl 0.007902
+shoot 0.007775
+support 0.007541
+law 0.006361
+
+topic 15
+distro from BREITBART2012-2013
+cut 0.030409
+defens 0.018670
+budget 0.010787
+tax 0.010203
+spend 0.010120
+administr 0.008748
+militari 0.008558
+sequestr 0.006949
+sequest 0.006279
+year 0.006225
+
+distro from NATIONALREVIEW2012-2013
+tax 0.016374
+spend 0.014592
+cut 0.011374
+year 0.009172
+percent 0.007808
+plan 0.007567
+budget 0.007373
+make 0.006374
+even 0.006050
+pay 0.005705
+
+distro from FOX2012-2013
+cut 0.025239
+budget 0.022626
+tax 0.015989
+program 0.009797
+plan 0.009775
+pay 0.008790
+year 0.008494
+govern 0.008460
+spend 0.008424
+agenc 0.006922
+
+distro from WASHINGTONEXAMINER2012-2013
+tax 0.021669
+plan 0.011911
+cut 0.011871
+spend 0.011325
+year 0.009355
+pay 0.008226
+budget 0.007885
+make 0.007301
+deal 0.006827
+govern 0.006525
+
+distro from REUTERS2012-2013
+cut 0.019440
+budget 0.013607
+congress 0.009282
+tax 0.009081
+spend_cut 0.006894
+spend 0.006859
+plan 0.006409
+year 0.006315
+white_hous 0.005674
+propos 0.005395
+
+distro from NPR2012-2013
+cut 0.026498
+budget 0.012573
+congress 0.011809
+program 0.011745
+year 0.008879
+sequest 0.007696
+tax 0.007434
+automat 0.006197
+minimum_wage 0.006084
+defens 0.005876
+
+distro from NYT2012-2013
+cut 0.025849
+congress 0.009317
+budget 0.009200
+sequest 0.008218
+spend 0.007816
+program 0.007448
+govern 0.006656
+tax 0.006335
+white_hous 0.006164
+year 0.005799
+
+distro from MSN2012-2013
+tax 0.033896
+cut 0.015824
+year 0.015304
+congress 0.012867
+tax_cut 0.010773
+budget 0.007610
+pay 0.007607
+white_hous 0.007261
+plan 0.007053
+spend 0.006806
+
+distro from CNN2012-2013
+cut 0.025338
+budget 0.014262
+white_hous 0.010953
+spend 0.009460
+sequest 0.008611
+year 0.008398
+plan 0.007801
+tax 0.007091
+govern 0.006858
+propos 0.006593
+
+distro from SLATE2012-2013
+cut 0.016337
+budget 0.013521
+deal 0.011472
+medicar 0.010207
+tax 0.009499
+spend 0.009284
+govern 0.006448
+want 0.006303
+plan 0.006086
+go 0.005537
+
+topic 19
+distro from BREITBART2012-2013
+elect 0.029279
+parti 0.026598
+polit 0.022267
+support 0.021464
+vote 0.016491
+voter 0.013649
+poll 0.012307
+govern 0.009997
+percent 0.008104
+campaign 0.008087
+
+distro from NATIONALREVIEW2012-2013
+vote 0.017680
+voter 0.016806
+state 0.015807
+elect 0.012610
+percent 0.009913
+poll 0.009393
+parti 0.008969
+candid 0.008236
+conserv 0.008182
+polit 0.007373
+
+distro from FOX2012-2013
+voter 0.024555
+vote 0.020314
+elect 0.016904
+candid 0.012309
+campaign 0.011124
+parti 0.011077
+poll 0.010046
+state 0.008986
+support 0.008830
+polit 0.007108
+
+distro from WASHINGTONEXAMINER2012-2013
+voter 0.017059
+vote 0.015233
+state 0.014125
+percent 0.011646
+campaign 0.011566
+elect 0.010589
+poll 0.010456
+win 0.008546
+support 0.007402
+ohio 0.006491
+
+distro from REUTERS2012-2013
+vote 0.018876
+parti 0.016984
+elect 0.016844
+voter 0.016404
+percent 0.012843
+poll 0.012617
+candid 0.010892
+campaign 0.010867
+sanford 0.010814
+conserv 0.010059
+
+distro from NPR2012-2013
+vote 0.030145
+polit 0.024596
+elect 0.020235
+state 0.018258
+scott 0.013306
+campaign 0.012650
+parti 0.011591
+poll 0.010928
+voter 0.009310
+florida 0.008425
+
+distro from NYT2012-2013
+parti 0.024992
+elect 0.019818
+vote 0.018474
+polit 0.016050
+voter 0.011369
+state 0.011037
+campaign 0.008845
+candid 0.008556
+poll 0.006860
+conserv 0.005635
+
+distro from MSN2012-2013
+campaign 0.013000
+state 0.008544
+poll 0.006806
+go 0.006632
+polit 0.005517
+win 0.005240
+walker 0.005190
+race 0.005182
+get 0.005167
+elect 0.005073
+
+distro from CNN2012-2013
+parti 0.016283
+elect 0.013203
+candid 0.013185
+sanford 0.012244
+south_carolina 0.012244
+state 0.012179
+primari 0.011393
+race 0.011302
+campaign 0.009536
+vote 0.009082
+
+distro from SLATE2012-2013
+vote 0.023577
+voter 0.019071
+state 0.013521
+elect 0.012631
+campaign 0.011672
+win 0.009581
+poll 0.008399
+candid 0.007147
+percent 0.006789
+lose 0.006290
+
+topic 8
+distro from BREITBART2012-2013
+peopl 0.015956
+think 0.014295
+know 0.014108
+get 0.013804
+see 0.011771
+go 0.011322
+american 0.009357
+mani 0.008777
+make 0.007883
+live 0.007669
+
+distro from NATIONALREVIEW2012-2013
+peopl 0.014961
+think 0.014824
+know 0.008940
+get 0.007746
+thing 0.006501
+mani 0.006102
+talk 0.005846
+make 0.005779
+way 0.005773
+want 0.005744
+
+distro from FOX2012-2013
+get 0.018463
+know 0.014763
+laughter 0.013586
+think 0.012279
+tell 0.010835
+peopl 0.010564
+go 0.009796
+want 0.009533
+thing 0.009172
+take 0.009035
+
+distro from WASHINGTONEXAMINER2012-2013
+think 0.022055
+get 0.017209
+peopl 0.013722
+go 0.012829
+see 0.010992
+know 0.009810
+thing 0.009632
+tell 0.008586
+make 0.008086
+believ 0.006693
+
+distro from REUTERS2012-2013
+get 0.038516
+think 0.037486
+know 0.019639
+go 0.015764
+peopl 0.013715
+want 0.011944
+tell 0.010736
+make 0.009780
+talk 0.009681
+see 0.009191
+
+distro from NPR2012-2013
+know 0.026139
+think 0.019181
+peopl 0.014844
+go 0.011782
+get 0.010366
+realli 0.010355
+thing 0.008680
+well 0.007833
+lot 0.007014
+right 0.006920
+
+distro from NYT2012-2013
+get 0.023732
+think 0.022861
+go 0.021414
+peopl 0.019070
+know 0.017172
+way 0.010705
+thing 0.009187
+want 0.009019
+come 0.008380
+see 0.007942
+
+distro from MSN2012-2013
+think 0.031323
+get 0.024922
+go 0.016629
+peopl 0.012823
+want 0.012740
+make 0.012183
+thing 0.012156
+need 0.011675
+someth 0.009966
+way 0.009022
+
+distro from CNN2012-2013
+think 0.034529
+go 0.020778
+know 0.017960
+peopl 0.014423
+get 0.013975
+thing 0.013230
+ask 0.012553
+want 0.011101
+make 0.010563
+see 0.009005
+
+distro from SLATE2012-2013
+get 0.014837
+peopl 0.012318
+think 0.011335
+want 0.010085
+go 0.009750
+know 0.007545
+ask 0.006544
+talk 0.006262
+realli 0.006099
+thing 0.006019
+

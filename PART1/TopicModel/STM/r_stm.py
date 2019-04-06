@@ -1,15 +1,16 @@
 import pandas as pd
 
 # r
-from rpy2.robjects.packages import importr
 from rpy2.robjects import r
 import rpy2.robjects as robjects
+
 
 # saves files:
 #	- stm plot
 #	- stm summary 
 # 	- cov plot 
 # 	- cov summary
+# 	- topic-document frequency matrix
 def run_stm(folder, csvfile):
 	r('library(\'stm\')')
 	r('poliblogs<-read.csv(\"'+csvfile+'\",header=TRUE)')
@@ -32,10 +33,11 @@ def run_stm(folder, csvfile):
 	r("predict_topics<-estimateEffect(formula = ~ rating, stmobj = First_STM," \
 		"metadata = out$meta, uncertainty = \"Global\")")
 
-
 	# ---------------------------- SAVE FILES ---------------------------- # 
 	print("saving files")
 	r("dir.create(\""+folder+"\",showWarnings=FALSE,mode=\"0777\")")
+	# save workspace
+	r("save.image(file=\""+folder+"/my_work_space.RData\")")
 	# saving stm plot
 	r("pdf(file=\""+folder+"/"+"stm_plot.pdf\")")
 	r("plt = plot(First_STM)")
@@ -49,14 +51,18 @@ def run_stm(folder, csvfile):
 			"cov.value1 = \"left\", cov.value2 = \"right\"," \
 			"xlab = \"More Conservative ... More Liberal\"," \
 			"main = \"Effect of Liberal vs. Conservative\"," \
-			"xlim = c(-.03, .03), labeltype = \"custom\"," \
+			"labeltype = \"custom\"," \
 			"custom.labels = paste(\"Topic\",1:30))")
 	r("dev.off()")
 	# saving covariate summary
 	r("capture.output(summary(predict_topics), file=\""+folder+"/"+"cov_summary.txt\", append=FALSE)")
+	
+	# ---------------------------- SAVE FREQ DATAFRAME ---------------------------- # 
+	# saving topic-document frequency dataframe as csv
+	r("freqs = data.frame(First_STM$theta)")
+	r("write.csv(freqs, \""+folder+"/"+"td_frequencies.csv\")")
 
-
-	# ---------------------------- RETURN DATAFRAME ---------------------------- # 
+	# ---------------------------- SAVE COV DATAFRAME ---------------------------- # 
 	# return dataframe of cov results
 	r("summ = summary(predict_topics)")
 	r("est <- predict_topics")
@@ -71,8 +77,11 @@ def run_stm(folder, csvfile):
 	r("df <- df[order(df$coef),]")
 	r("df[order(df$coef),]")
 
-	df = robjects.r['df']
-	return df
+	r("write.csv(df, \""+folder+"/"+"covariates.csv\")")
+
+
+	# df = robjects.r['df']
+	# return df
 
 
 

@@ -1,6 +1,7 @@
 # take collocations & create a document-matrix
 import THESIS2019.utils.to_lexicon as lex
 from THESIS2019.utils.base_words import *
+from THESIS2019.utils.get_articles import *
 
 import datetime
 import pickle
@@ -86,12 +87,13 @@ def get_doc_and_timeslices(col):
     return docs, timeslices
 
 # alter topic evolution with the parameter "top_chain_var", default=0.005
+# doc_set = {"label",[]}
 def to_document_dat(doc_set):
 	combined = []
-	for dset in doc_set:
-		doc = [d[1] for d in dset] # grabbing the dset
-		print ("dset length: %d" %(len(doc)))
-		combined += doc
+	for label,dset in doc_set.items():
+		# doc = [d[1] for d in dset] # grabbing the dset
+		print ("dset length: %d" %(len(dset)))
+		combined += dset
 
 	print("total:%d\n"%(len(combined)))
 
@@ -110,8 +112,8 @@ def to_document_dat(doc_set):
 
 	# write timesequence file
 	with open("data/doc-seq.dat", "w") as f:
-		s = str(len(doc_set))
-		for dset in doc_set:
+		s = str(len(doc_set.items()))
+		for label,dset in doc_set.items():
 			s+="\n"
 			s+=str(len(dset))
 		f.write(s)
@@ -122,7 +124,6 @@ def to_document_dat(doc_set):
 # RUN DTM
 def run_dtm():
 	subprocess.call(["./dtm.sh"])
-
 
 
 # POST-PROCESS
@@ -160,29 +161,26 @@ def word(idx):
 		dct = pickle.load(f)
 	return dct[idx]
 
-
-def get_top_words(topic_num, time):
+# get the words of topic_num from document slice
+def get_top_words(topic_num, slice_id):
 	def prob(n):
 		return math.exp(n)
 	matrix = get_matrix(topic_num)
-	timeslice = matrix[:,time]
+	timeslice = matrix[:,slice_id]
 	indexed = [(i,prob(v)) for i,v in enumerate(timeslice)]
 	sorted_by_prob = sorted(indexed, key=lambda x:x[1], reverse=True)
 
 	return sorted_by_prob
 
 
-def topic_over_time(topic_num, pr=False):
-	dist0=get_top_words(topic_num,0)
-	dist1=get_top_words(topic_num,1)
-	dist2=get_top_words(topic_num,2)
+def topic_over_time(doc_set, topic_num, pr=False):
+	distros = {}
+	keys = list(doc_set.keys())
+	for slice_id in range(len(keys)):
+		distro = get_top_words(topic_num, slice_id)
+		distros[keys[slice_id]]=distro
 
-	if pr:
-		print_topic(dist0)
-		print_topic(dist1)
-		print_topic(dist2)
-
-	return dist0, dist1, dist2
+	return distros
         
 
 def print_topic(topic, num_words=10):
@@ -191,7 +189,13 @@ def print_topic(topic, num_words=10):
 	print("\n")
 
 
-def to_distro(dist, topn=50):
+def write_topic(f, topic, num_words=10):
+	for tup in topic[:num_words]:
+		f.write("%s %f\n" %(word(tup[0]),tup[1]))
+	f.write("\n")
+
+
+def to_js_distro(dist, topn=50):
 	ids = [str(d[0]) for d in dist][:topn]
 	probs = [d[1] for d in dist][:topn]
 	sumprobs = sum(probs)
@@ -201,20 +205,25 @@ def to_distro(dist, topn=50):
 	return distro
 
 
-def highest_js(topn=None):
+# for each topic, find the JSD among years for that topic
+# for each topic, find the JSD among media outlets for that topic
+def highest_js(doc_set, topn=None):
 	topics = []
-	for i in range(20):
-		dist0, dist1, dist2 = topic_over_time(i)
-		X, Y, Z = to_distro(dist0), to_distro(dist1), to_distro(dist2) 
-		jsd = jensen_shannon_divergence([X,Y,Z])
+	for i in range(20):	
+		distros = topic_over_time(doc_set, i)
+		js_distros = [to_js_distro(distro) for key,distro in distros.items()]
+		jsd = jensen_shannon_divergence(js_distros)
 		topics.append((i, jsd))
+
 	sorted_topics = sorted(topics, key=lambda x:x[1], reverse=True)
 	for i,jsd in sorted_topics:
 		print("JS Divergence of topic %d: %f"%(i, jsd))
+	jsds = np.array([jsd for i,jsd in sorted_topics])
+	print("mean divergence: %f" %(np.mean(jsds)))
+	print("std divergence: %f" %(np.mean(jsds)))
 	if topn is not None:
 		return sorted_topics[:topn]
 	return sorted_topics
-
 
 
 ### VISUALIZE
@@ -240,7 +249,6 @@ def graph_topic_over_time(topic):
 	means2 = [dct_means2[w] for w in words]
 
 	n_groups = len(words)
-
 
 	# create plot
 	fig, ax = plt.subplots(figsize=(20, 10))
@@ -301,58 +309,42 @@ def graph_words_of_interest(topic, keywords):
 
 if __name__ == '__main__':
 	
-	# path = "/Users/ninawang/Thesis/remote/THESIS2019/Jupyter Notebooks/"
+	datapath = "/Users/ninawang/Thesis/remote/THESIS2019/example_data_1000/"
+	outlets = ['BREITBART','NATIONALREVIEW','FOX',
+				'WASHINGTONEXAMINER','REUTERS','NPR',
+				'NYT', 'MSN','CNN','SLATE']
+	articles = get_articles_outlets(datapath,outlets,2012)
 
-	# # load 2008
-	# with open(path+"2008-collocations-dem.pkl", "rb") as f:
-	# 	dem2008 = pickle.load(f)
-	# with open(path+"2008-collocations-rep.pkl", "rb") as f:
-	# 	rep2008 = pickle.load(f)
+	# doc_set = {}
+	# for label, arts in articles.items():
+	# 	print(label, len(arts))
+	# 	filt, docs =lex.get_topicmodel_docs(arts, LEFT_WORDS)
+	# 	doc_set[label]=docs
 
-	# # load 2012
-	# with open(path+"2012-collocations-dem.pkl", "rb") as f:
-	# 	dem2012 = pickle.load(f)
-	# with open(path+"2012-collocations-rep.pkl", "rb") as f:
-	# 	rep2012 = pickle.load(f)
+	# load
+	doc_set = {}
+	for label, arts in articles.items():
+		with open("../LDA/docs/"+label+"_docs2012.pkl","rb") as f:
+			docs = pickle.load(f)
+		print(label, len(docs))
+		doc_set[label]=docs
 
-	# # load 2016
-	# with open(path+"2016-collocations-dem.pkl", "rb") as f:
-	# 	dem2016 = pickle.load(f)
-	# with open(path+"2016-collocations-rep.pkl", "rb") as f:
-	# 	rep2016 = pickle.load(f)
-
-
-	path = "/Users/ninawang/Thesis/remote/THESIS2019/NYT-OPINION2008-2009-processed/"
-	start = datetime.datetime(2008, 1, 1)
-	end = datetime.datetime(2009, 12, 1)
-	articles2008 = lex.get_articles_from_filepath(path,start,end)
-
-	path = "/Users/ninawang/Thesis/remote/THESIS2019/NYT-OPINION2012-2013-processed/"
-	start = datetime.datetime(2012, 6, 1)
-	end = datetime.datetime(2013, 7, 1)
-	articles2012 = lex.get_articles_from_filepath(path,start,end)
-
-	path = "/Users/ninawang/Thesis/remote/THESIS2019/NYT-OPINION2016-2017-processed/"
-	start = datetime.datetime(2016, 6, 1)
-	end = datetime.datetime(2017, 7, 1)
-	articles2016 = lex.get_articles_from_filepath(path,start,end)
-
-	dem2008 = lex.get_topicmodel_docs(articles2008,LEFT_WORDS)
-	dem2012 = lex.get_topicmodel_docs(articles2012,LEFT_WORDS)
-	dem2016 = lex.get_topicmodel_docs(articles2016,LEFT_WORDS)
-
-	doc_set = [dem2008, dem2012, dem2016]
-	
 	global NUM_TIMESTAMPS
-	NUM_TIMESTAMPS = len(doc_set)
+	NUM_TIMESTAMPS = len(doc_set.keys())
 
-	to_document_dat(doc_set)
-	run_dtm()
+	# to_document_dat(doc_set)
+	# print("running dtm...")
+	# run_dtm()
+	# print("finished dtm...")
+	maxtopics = highest_js(doc_set,topn=20)
 
-	maxtopics = highest_js(3)
-	for i,jsd in maxtopics:
-		print ("topic %d" %i)
-		tps = topic_over_time(i, pr=True)
+	with open("dtm_output.txt","w") as f:
+		for i,jsd in maxtopics:
+			f.write("topic %d\n" %i)
+			tps = topic_over_time(doc_set, i, pr=True)
+			for key,distro in tps.items():
+				f.write("distro from %s\n" %(key))
+				write_topic(f,distro)
 
 
 

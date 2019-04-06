@@ -1,0 +1,151 @@
+A topic model with 30 topics, 668 documents and a 8770 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: percent, poll, voter, vote, democrat, republican, point 
+ 	 FREX: poll, greuel, garcetti, survey, voter, percent, turnout 
+ 	 Lift: conscious, garcetti, gillespi, gorman, schnur, slew, cruts 
+ 	 Score: poll, greuel, garcetti, voter, cruts, turnout, survey 
+Topic 2 Top Words:
+ 	 Highest Prob: state, egypt, offici, attack, govern, report, unit 
+ 	 FREX: tsarnaev, morsi, egypt, brotherhood, muslim, issa, terror 
+ 	 Lift: handcuff, mahmoud, tahrir, ansar, corkin, dine, backyard 
+ 	 Score: tsarnaev, morsi, egypt, brotherhood, issa, muslim, terror 
+Topic 3 Top Words:
+ 	 Highest Prob: tax, cut, spend, republican, budget, democrat, year 
+ 	 FREX: cut, tax, fiscal, budget, deficit, increa, spend 
+ 	 Lift: catchal, groceri, lawder, pare, norquist, puerto, adroit 
+ 	 Score: tax, cut, fiscal, deduct, hike, budget, deficit 
+Topic 4 Top Words:
+ 	 Highest Prob: group, parti, gay, polit, marriag, organ, republican 
+ 	 FREX: tide, applic, gay, marijuana, donor, platform, nonprofit 
+ 	 Lift: goproud, heinz, lasalvia, apparatchik, folli, horticultur, ketchup 
+ 	 Score: tide, marriag, applic, gay, nonprofit, marijuana, donor 
+Topic 5 Top Words:
+ 	 Highest Prob: health, court, care, law, insur, justic, state 
+ 	 FREX: verrilli, insur, medicaid, health, uphold, obamacar, suprem 
+ 	 Lift: adam, albatross, alloc, angina, antonin, apostl, asthma 
+ 	 Score: verrilli, court, suprem, medicaid, insur, justic, health 
+Topic 6 Top Words:
+ 	 Highest Prob: church, world, work, educ, peopl, student, make 
+ 	 FREX: thatcher, church, kristof, faith, margaret, missionari, mcbride 
+ 	 Lift: affin, amanda, baptism, batchelor, biker, chastiti, chemist 
+ 	 Score: church, thatcher, mormon, kristof, missionari, dewey, franci 
+Topic 7 Top Words:
+ 	 Highest Prob: republican, hagel, vote, parti, nomin, democrat, minor 
+ 	 FREX: hagel, longoria, rice, cruz, filibust, lincoln, oscar 
+ 	 Lift: avik, filmmak, inouy, misogynist, neb, tasteless, vulgar 
+ 	 Score: hagel, filibust, rice, oscar, cruz, lincoln, longoria 
+Topic 8 Top Words:
+ 	 Highest Prob: peopl, abort, parti, want, right, make, mani 
+ 	 FREX: anim, gosnel, restaur, abort, bother, monckton, european 
+ 	 Lift: automot, yglesia, ant, audac, bori, brunch, cantral 
+ 	 Score: gosnel, monckton, restaur, kook, abort, britain, anim 
+Topic 9 Top Words:
+ 	 Highest Prob: govern, american, polici, republican, use, peopl, tax 
+ 	 FREX: core, common, depend, databa, benefit, govern, kosovo 
+ 	 Lift: individualist, southeastern, submerg, taker, boondoggl, ferpa, furstenberg 
+ 	 Score: kosovo, submerg, taker, core, lib, databa, lord 
+Topic 10 Top Words:
+ 	 Highest Prob: court, marriag, right, state, rule, law, feder 
+ 	 FREX: treati, perez, cuccinelli, contracept, court, harvard, quota 
+ 	 Lift: appel, asper, becket, bok, bowen, caitlin, caltech 
+ 	 Score: perez, court, quota, marriag, cuccinelli, treati, suprem 
+Topic 11 Top Words:
+ 	 Highest Prob: israel, administr, committ, nation, secur, american, palestinian 
+ 	 FREX: netanyahu, palestinian, isra, drone, jewel, cia, israel 
+ 	 Lift: senor, settler, waterboard, anwar, ebel, hosenb, interrog 
+ 	 Score: palestinian, jewel, drone, isra, israel, netanyahu, terrorist 
+Topic 12 Top Words:
+ 	 Highest Prob: campaign, mitt, medicar, plan, choic, run, mate 
+ 	 FREX: mate, medicar, acosta, ticket, julia, norfolk, saturday 
+ 	 Lift: hambi, streitfeld, brianna, everywoman, feist, jacket, janesvil 
+ 	 Score: mate, norfolk, julia, ashland, acosta, jimacostacnn, medicar 
+Topic 13 Top Words:
+ 	 Highest Prob: sandi, hurrican, nation, citi, jersey, monday, state 
+ 	 FREX: codi, hurrican, sandi, storm, menendez, printer, flood 
+ 	 Lift: adh, axl, bahama, beget, counterfeit, cryptolog, dissert 
+ 	 Score: sandi, hurrican, codi, printer, jersey, menendez, fabric 
+Topic 14 Top Words:
+ 	 Highest Prob: job, economi, year, econom, state, growth, govern 
+ 	 FREX: panetta, tank, wage, gasolin, economist, growth, feed 
+ 	 Lift: afflict, buildabl, densiti, deregul, doomsday, encomium, enron 
+ 	 Score: panetta, gasolin, krugman, greec, inflat, growth, wage 
+Topic 15 Top Words:
+ 	 Highest Prob: email, news, polit, signup, enter, digest, fox 
+ 	 FREX: digest, signup, email, trial, fox, sorri, murdoch 
+ 	 Lift: anyhow, drub, miscalcul, payoff, rubin, acid, admin 
+ 	 Score: signup, digest, trial, murdoch, storytel, ail, email 
+Topic 16 Top Words:
+ 	 Highest Prob: republican, democrat, state, parti, elect, seat, campaign 
+ 	 FREX: seat, pension, hampshir, rubio, retir, iowa, counti 
+ 	 Lift: branstad, craney, kabel, tulchin, agribusi, astroturf, aviksaroy 
+ 	 Score: judd, pension, seat, republican, democrat, rubio, race 
+Topic 17 Top Words:
+ 	 Highest Prob: school, jewish, emori, dental, student, year, make 
+ 	 FREX: dental, buhler, brickman, hug, ayanbadejo, emori, jewish 
+ 	 Lift: brickman, dentist, hug, bittersweet, cpa, crown, dental 
+ 	 Score: dental, buhler, emori, brickman, ayanbadejo, dentistri, jewish 
+Topic 18 Top Words:
+ 	 Highest Prob: china, attack, report, war, korea, north, peopl 
+ 	 FREX: hedegaard, akp, turkish, korea, turkey, missil, china 
+ 	 Lift: abbrevi, abhorr, aerospac, afghan, akp, akyol, antagonist 
+ 	 Score: korea, hedegaard, akp, turkey, missil, islam, turkish 
+Topic 19 Top Words:
+ 	 Highest Prob: even, campaign, make, democrat, republican, congress, nation 
+ 	 FREX: bain, bank, mortgag, fortun, claus, cfpb, filibust 
+ 	 Lift: according, alarmist, aplenti, astut, bcg, belated, berlau 
+ 	 Score: claus, filibust, cfpb, bain, bank, schweitzer, mortgag 
+Topic 20 Top Words:
+ 	 Highest Prob: environ, energi, sustain, epa, use, studi, oil 
+ 	 FREX: seafood, epa, fish, sustain, environ, oil, energi 
+ 	 Lift: chu, methan, recycl, brownstein, cleaner, fabul, flame 
+ 	 Score: seafood, epa, chu, morrissey, energi, certifi, ocean 
+Topic 21 Top Words:
+ 	 Highest Prob: immigr, republican, illeg, secur, reform, percent, support 
+ 	 FREX: citizenship, immigr, illeg, gang, border, hispan, judiciari 
+ 	 Lift: fragil, homebuy, metro, mohler, acorn, anglo, apprehen 
+ 	 Score: immigr, citizenship, border, gang, illeg, visa, hispan 
+Topic 22 Top Words:
+ 	 Highest Prob: republican, parti, think, get, laughter, right, call 
+ 	 FREX: laughter, silver, davi, applaus, mccaskil, sununu, deleg 
+ 	 Lift: adolesc, alterc, beanbag, beverag, bircher, blah, cadenc 
+ 	 Score: laughter, sununu, applaus, populist, mccaskil, blah, silver 
+Topic 23 Top Words:
+ 	 Highest Prob: peopl, koop, get, young, aid, jackson, use 
+ 	 FREX: koop, stockman, older, surgeon, jackson, soundbit, shapiro 
+ 	 Lift: everett, abstin, alley, alzheim, amor, amput, anteroom 
+ 	 Score: koop, surgeon, stockman, soundbit, npr, jackson, everett 
+Topic 24 Top Words:
+ 	 Highest Prob: debat, polici, american, women, war, foreign, world 
+ 	 FREX: roosevelt, soviet, foreign, carter, debat, franklin, fdr 
+ 	 Lift: danvil, hempstead, indeci, iter, reunif, atroci, bacevich 
+ 	 Score: roosevelt, soviet, isolationist, carter, franklin, fdr, foreign 
+Topic 25 Top Words:
+ 	 Highest Prob: gun, shoot, check, state, democrat, control, background 
+ 	 FREX: lanza, newtown, gun, shoot, background, nra, registri 
+ 	 Lift: anguish, glock, heartbreak, pryor, renam, sedenski, shotgun 
+ 	 Score: lanza, gun, newtown, registri, nra, firearm, shoot 
+Topic 26 Top Words:
+ 	 Highest Prob: hous, bill, republican, committ, group, congress, report 
+ 	 FREX: miller, committ, hous, lerner, lawmak, treasuri, investig 
+ 	 Lift: ahmann, appri, bachu, bohan, caren, chadbourn, conant 
+ 	 Score: lerner, miller, fha, shulman, committ, inspector, treasuri 
+Topic 27 Top Words:
+ 	 Highest Prob: candid, convent, republican, evangel, sanford, demo, mormon 
+ 	 FREX: sanford, demo, evangel, mormon, judd, kentucki, falwel 
+ 	 Lift: colbert, gilgoff, nashvil, outlast, starv, abramson, beaufort 
+ 	 Score: demo, sanford, mormon, judd, evangel, falwel, kentucki 
+Topic 28 Top Words:
+ 	 Highest Prob: sexual, book, buckley, review, lopez, bulli, mani 
+ 	 FREX: buckley, sexual, fifti, intimaci, bulli, wfb, lopez 
+ 	 Lift: anastasia, bdsm, bride, censorship, coin, erotica, hosea 
+ 	 Score: sexual, lopez, buckley, fifti, intimaci, bulli, spiritu 
+Topic 29 Top Words:
+ 	 Highest Prob: pope, cathol, franci, vatican, world, come, bear 
+ 	 FREX: pope, vatican, benedict, franci, snow, cardin, portrait 
+ 	 Lift: cristina, ivori, photographi, pontiff, bergoglio, chelsea, curia 
+ 	 Score: pope, franci, vatican, benedict, snow, cardin, cathol 
+Topic 30 Top Words:
+ 	 Highest Prob: union, worker, labor, museum, paint, work, last 
+ 	 FREX: museum, gomez, paint, cross, memori, worker, labor 
+ 	 Lift: artwork, canva, gomez, museum, atheist, afscm, vandal 
+ 	 Score: museum, gomez, artist, artwork, worker, vandal, atheist 

@@ -31,8 +31,8 @@ def filter_support_words(tokens):
     return words
 
 def filter_banned_words(tokens):
-	words = [tok for tok in tokens if tok not in BANNED]
-	return words 
+	# words = [tok for tok in tokens if tok not in BANNED]
+	return list(filter(lambda x:x not in BANNED, tokens)) 
 
 ## helper method for text cleanup
 def text_cleanup(text, filter_support=False, proper_nouns=[], filter_banned=False):
@@ -56,7 +56,7 @@ def text_cleanup(text, filter_support=False, proper_nouns=[], filter_banned=Fals
 		lemma = WordNetLemmatizer().lemmatize(token, pos="v") # LOOK AT THIS!! POS??
 		return stemmer.stem(lemma)
 
-	tokens = [lemma_stem(token) for token in tokens if filt(token)]
+	tokens = [lemma_stem(token).lower() for token in tokens if filt(token)]
 
 	if filter_banned:
 		tokens = filter_banned_words(tokens)
@@ -256,56 +256,66 @@ def graph_coherence(dictionary, corpus, texts):
 	# plt.show()
 
 
-def get_topicmodel_docs(article_set, keywords):
+def get_topicmodel_docs(articles, keywords):
 	needles = set([s.lower() for s in keywords])
+	banned_set = set(BANNED)
 
 	# filter articles for presence of keyword 
-	filt_articles = {}
+	filt_articles = []
 	doc = []
-
-	for key,articles in article_set.items():
-		filt_article_set = []
-		for article in articles:
-			words = text_cleanup(article.text, filter_support=True)
-			haystack = set([s.lower() for s in words])
-			if len(haystack.intersection(needles)) > 0:
-				doc.append(words)
-				filt_article_set.append(article)
-		filt_articles[key]=filt_article_set
+	for article in articles:
+		words = text_cleanup(article.text, filter_support=True)
+		haystack = set(words)
+		if len(haystack.intersection(needles)) > 0:
+			doc.append(words)
+			filt_articles.append(article)
 
 	filt_doc = []
 	for bow in doc:
-		filt_words = [word for word in bow if word.lower() not in needles]
-		filt_doc.append(filt_words)
-
+		filt_doc.append(list(filter(lambda x: x.lower() not in needles, bow)))
 	doc = filt_doc
 
-	# Add bigrams and trigrams to docs
+	# Add bigrams docs
 	bigram = Phrases(doc, min_count=5,threshold=10) #min_count=5, threshold=10
-	trigram = Phrases(bigram[doc])
 
 	updated_docs = [bigram[doc[i]] for i in range(len(doc))] 
-	
+
 	filtered_updated_docs = []
 	for bow in updated_docs:
-		filtered_updated_docs.append([word for word in bow if word not in BANNED])
+		filtered_updated_docs.append(list(filter(lambda x: x not in banned_set, bow)))
+		# filtered_updated_docs.append([word for word in bow if word not in BANNED])
 	updated_docs = filtered_updated_docs
 
-	# with open("topicmodel_docs2016.pkl","wb") as f:
-	# 	pickle.dump(updated_docs, f)
-
+	# filt_articles = actual articles, updated_docs = bag of words
 	return filt_articles, updated_docs
 
 
 # additional words in the body of the documents
 # don't need to keep track of word probabilities...just bow
 # article set example: {2012:[], 2016:[]}
-def LDA(article_set, keywords, num_topics=15, best_coherence=False):
+def LDA(article_set, keywords, num_topics=15, best_coherence=False,load=False):
 	print ("getting docs...")
 	
 	start_time = time.time()
 
-	filt_articles, updated_docs = get_topicmodel_docs(article_set,keywords)
+	filt_articles = {}
+	updated_docs = []
+	for key,articles in article_set.items():
+
+		if load:
+			with open("docs/"+key+"_docs2012.pkl","rb") as f:
+				updated = pickle.load(f)
+		else:
+			st = time.time()
+			filt, updated = get_topicmodel_docs(articles,keywords)
+			print("--- %s seconds --- to get %s" % (time.time() - st, key))
+			print(len(updated))
+			# dump
+			with open("docs/"+key+"_docs2012.pkl","wb") as f:
+				pickle.dump(updated, f)
+
+		filt_articles[key] = updated  #I CHANGED THIS FROM FILT TO UPDATED to get the BOW instead of articles
+		updated_docs += updated
 	
 	# LOAD
 	# with open("topicmodel_docs2016.pkl","rb") as f:

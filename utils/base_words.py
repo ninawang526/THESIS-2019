@@ -28,7 +28,7 @@ NEWS =["advertis_continu", "box_invalid", "read_main", "email_address", "servic_
 "front","page","unit_state","tim","pleas_verifi","inbox_monday_friday","invalid_email_address","inbox_monday",
 "deliv_inbox_monday","stori", "commentari", "columnist", "editori", "nyt", "cnn", "pdf","txt","newslett_enter","valid_email","newslett_signup","address_field"
 "signup_center","pleas_click","visit_newslett","first_newslett","soon_sorri","regist_newslett","error_process","newslett_receiv","begin_receiv","pleas_enter","polit_digest",
-"digest_newslett"]
+"digest_newslett", "editor", "david", "brook", "today"]
 
 NAMES=["rodham","georg","ryan","obama","clinton","michel","john","marco","cantor","ann","adelson",
 		"ted","christi","mitch","mcconnel","lindsey","graham","jindal","rand","paul","cameron", "eric",
@@ -45,7 +45,7 @@ TITLES=["secretari","governor","chairman","gov","vice","prime_minist","prime","s
 
 OTHER=["say"]
 
-BANNED = NEWS+NAMES+TITLES
+BANNED = NEWS+NAMES+TITLES+OTHER
 
 
 MONTH_NAMES = ["january","february","march","april","may","june","july","august","september","october","november","december"]
